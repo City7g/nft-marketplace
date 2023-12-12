@@ -1,0 +1,223 @@
+{% extends "main.njk" %} {% block content %} {% set colors = ['primary',
+'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'] %}
+
+<section>
+  <div class="container">
+    <div class="ui">
+      <aside class="ui__aside">
+        <a href="#text">Text</a>
+        <a href="#avatars">Avatar</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#all">All</a>
+      </aside>
+
+      <div class="ui__main">
+        <h1>UI page</h1>
+
+        {% include "text.njk" %} {% include "button.njk" %} {% include
+        "avatars.njk" %}
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Button lg</h4>
+
+            {% for color in [colors[0], colors[1]] %}
+            <button class="btn btn-lg btn-{{ color }}">{{ color }}</button>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Button sm</h4>
+
+            {% for color in [colors[0], colors[1]] %}
+            <button class="btn btn-sm btn-{{ color }}">{{ color }}</button>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Button outline</h4>
+
+            {% for color in colors %}
+            <button class="btn btn-outline-{{ color }}">{{ color }}</button>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Button disabled</h4>
+
+            {% for color in colors %}
+            <button class="btn btn-{{ color }}" disabled="disabled">
+              {{ color }}
+            </button>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Burger</h4>
+
+            <button class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Input</h4>
+
+            <input type="text" placeholder="Type text" />
+            <input type="email" placeholder="Type email" />
+            <input type="password" placeholder="Type password" />
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap ui__wrap--column">
+            <h4 class="ui__caption">Input checkbox</h4>
+
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">Checkbox</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="checkboxChecked" checked="checked" />
+              <label for="checkboxChecked">Checkbox Checked</label>
+            </div>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                disabled="disabled"
+                id="checkboxDisabled"
+              />
+              <label for="checkboxDisabled">Checkbox Disabled</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap ui__wrap--column">
+            <h4 class="ui__caption">Input radio</h4>
+
+            <div class="radio">
+              <input type="radio" name="radio" id="radio" />
+              <label for="radio">Radio One</label>
+            </div>
+            <div class="radio">
+              <input
+                type="radio"
+                name="radio"
+                id="radioChecked"
+                checked="checked"
+              />
+              <label for="radioChecked">Radio Two</label>
+            </div>
+            <div class="radio">
+              <input
+                type="radio"
+                name="radio"
+                disabled="disabled"
+                id="radioDisabled"
+              />
+              <label for="radioDisabled">Radio Disabled</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap ui__wrap--column">
+            <h4 class="ui__caption">Switches</h4>
+
+            <div class="radio">
+              <input type="checkbox" role="switch" id="switch" />
+              <label for="switch">Switch One</label>
+            </div>
+            <div class="radio">
+              <input
+                type="checkbox"
+                role="switch"
+                id="switchChecked"
+                checked="checked"
+              />
+              <label for="switchChecked">Switch Two</label>
+            </div>
+            <div class="radio">
+              <input
+                type="checkbox"
+                role="switch"
+                disabled="disabled"
+                id="switchDisabled"
+              />
+              <label for="switchDisabled">Switch Disabled</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap ui__wrap--column">
+            <h4 class="ui__caption">Select</h4>
+
+            <select>
+              <option>One</option>
+              <option>Two</option>
+              <option>Three</option>
+            </select>
+
+            <select disabled="disabled">
+              <option>One</option>
+              <option>Two</option>
+              <option>Three</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Spinner</h4>
+
+            {% for color in colors %}
+            <div class="spinner spinner-{{ color }}" role="status"></div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Spinner</h4>
+
+            {% for color in [colors[0], colors[1]] %}
+            <div
+              class="spinner spinner-sm spinner-{{ color }}"
+              role="status"
+            ></div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="ui__content">
+          <div class="ui__wrap">
+            <h4 class="ui__caption">Spinner</h4>
+
+            {% for color in [colors[0], colors[1]] %}
+            <div
+              class="spinner spinner-lg spinner-{{ color }}"
+              role="status"
+            ></div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

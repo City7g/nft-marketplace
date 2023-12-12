@@ -1,0 +1,36 @@
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  padding: 0 30px;
+  
+  @media (min-width: 1200px) {
+    height: 100px;
+    padding: 0 50px;
+  }
+}
+
+.header-nav__link {
+  color: $white;
+  transition: 0.3s color ease;
+
+  &:hover {
+    color: rgba($white, 0.4);
+  }
+
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo__text {
+  font-family: 'SpaceMono';
+  font-weight: 700;
+}

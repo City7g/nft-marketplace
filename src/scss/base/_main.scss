@@ -1,0 +1,12 @@
+body {
+  font-family: 'WorkSans';
+  background-color: $black;
+  color: $white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+::selection {
+  background-color: $white;
+  color: $black;
+}

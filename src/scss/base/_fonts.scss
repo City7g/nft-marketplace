@@ -1,0 +1,51 @@
+// Inlcude fonts
+@include font-face('SpaceMono', 'SpaceMono-Regular', 400);
+@include font-face('SpaceMono', 'SpaceMono-Bold', 700);
+@include font-face('WorkSans', 'WorkSans-Regular', 400);
+@include font-face('WorkSans', 'WorkSans-Bold', 700);
+
+// Main Fonts
+.title-h1 {
+  font-size: 67px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.title-h2 {
+  font-size: 51px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.title-h3 {
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.title-h4 {
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.title-h5 {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.text-p1 {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.text-p2 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.text-p3 {
+  font-size: 12px;
+  line-height: 1.1;
+}
