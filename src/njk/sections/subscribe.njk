@@ -1,8 +1,11 @@
+{% import "image.njk" as macros %}
+
 <section class="subscribe">
   <div class="container">
     <div class="subscribe__wrap">
       <div class="subscribe__image">
-        <img class="subscribe__img" src="/img/subscribe-image.png" alt="" />
+        {{ macros.image('/img/subscribe-bg', 'subscribe__img') }}
+        {# <img class="subscribe__img" src="/img/subscribe-image.png" alt="" /> #}
       </div>
 
       <div class="subscribe__content">

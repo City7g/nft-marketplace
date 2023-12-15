@@ -14,8 +14,7 @@
       <div class="ui__main">
         <h1>UI page</h1>
 
-        {% include "text.njk" %} {% include "button.njk" %} {% include
-        "avatars.njk" %}
+        {% include "text.njk" %} {% include "button.njk" %}
 
         <div class="ui__content">
           <div class="ui__wrap">
@@ -202,6 +201,8 @@
             {% endfor %}
           </div>
         </div>
+        
+        {% include "avatars.njk" %}
 
         <div class="ui__content">
           <div class="ui__wrap">
@@ -214,6 +215,13 @@
             ></div>
             {% endfor %}
           </div>
+        </div>
+
+        <div class="ui__content">
+          <input id="first" type="text">
+          <input id="second" type="text">
+
+          <pre id="three"></pre>
         </div>
       </div>
     </div>

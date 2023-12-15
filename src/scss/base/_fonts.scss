@@ -6,9 +6,19 @@
 
 // Main Fonts
 .title-h1 {
-  font-size: 67px;
-  line-height: 1.1;
+  font-size: 28px;
+  line-height: 1.4;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 67px;
+    line-height: 1.1;
+  }
 }
 
 .title-h2 {
@@ -18,9 +28,14 @@
 }
 
 .title-h3 {
-  font-size: 38px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.4;
   font-weight: 700;
+
+  @media (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.2;
+  }
 }
 
 .title-h4 {
@@ -36,8 +51,12 @@
 }
 
 .text-p1 {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.6;
+
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .text-p2 {

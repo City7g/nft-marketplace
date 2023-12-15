@@ -39,6 +39,7 @@ const html = () => {
           'src/njk/components/',
           'src/njk/sections/',
           'src/njk/ui/',
+          'src/njk/mixins/',
         ],
       })
     )

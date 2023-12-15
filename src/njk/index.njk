@@ -1,4 +1,5 @@
 {% extends "main.njk" %} {% block content %}
+{% import "image.njk" as macros %}
 
 <section class="section-base">
   <div class="container">
@@ -36,33 +37,84 @@
   </div>
 </section>
 
+<section class="collections">
+  <div class="container">
+    <h2 class="title-h3 collections__title">Trending Collection</h2>
+    <p class="text-p1 collections__text">Checkout our weekly updated trending collection.</p>
+
+    <div class="collections__list">
+      {% for i in range(1, 4) %}
+        <div class="collection">
+          {{ macros.image('/img/collections/item-' + i + '-1', 'collection__img') }}
+          {{ macros.image('/img/collections/item-' + i + '-2', 'collection__img') }}
+          {{ macros.image('/img/collections/item-' + i + '-3', 'collection__img') }}
+          <p class="title-h5 collection__more">1025+</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="categories">
   <div class="container">
     <h3 class="title-h3 categories__title">Browse Categories</h3>
 
     <div class="categories__list">
       {% for i in range(1, 9) %}
-      <div class="category">
-        <div class="category__image">
-          <img
-            class="category__img"
-            src="/img/category/item-{{ i }}.png"
-            alt=""
-          />
-          <img
-            class="category__icon"
-            src="/img/category/icon-{{ i }}.svg"
-            alt=""
-          />
-        </div>
+        <div class="category">
+          <div class="category__image">
+            {{ macros.image('/img/category/item-' + i + '', 'category__img') }}
+            <img
+              class="category__icon"
+              src="/img/category/icon-{{ i }}.svg"
+              alt=""
+            />
+          </div>
 
-        <div class="category__content">
-          <p class="title-h5 category__text">Art</p>
+          <div class="category__content">
+            <p class="title-h5 category__text">Art</p>
+          </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-{% include "subscribe.njk" %} {% endblock %}
+<section class="works">
+  <div class="container">
+    <h2 class="title-h3 works__title">How it works</h2>
+    <p class="text-p1 works__title">Find out how to get started</p>
+
+    <div class="works__list">
+      <div class="work">
+        <img class="work__img" src="/img/info/item-1.svg" alt="">
+        <h4 class="title-h5 work__title">Setup Your wallet</h4>
+        <p class="text-p2 work__text">Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.</p>
+      </div>
+
+      <div class="work">
+        <img class="work__img" src="/img/info/item-2.svg" alt="">
+        <h4 class="title-h5 work__title">Create Collection</h4>
+        <p class="text-p2 work__text">Upload your work and setup your collection. Add a description, social links and floor price.</p>
+      </div>
+
+      <div class="work">
+        <img class="work__img" src="/img/info/item-3.svg" alt="">
+        <h4 class="title-h5 work__title">Start Earning</h4>
+        <p class="text-p2 work__text">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="highlight">
+  <div class="container">
+    <div class="highlight__wrap">
+      <h2 class="title-h2 highlight__title">Magic Mashrooms</h2>
+      <button class="btn highlight__btn">See NFT</button>
+    </div>
+  </div>
+</section>
+
+{% include "subscribe.njk" %}
+{% endblock %}

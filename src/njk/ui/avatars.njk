@@ -1,9 +1,17 @@
+{% macro image(url, class) %}
+<picture>
+  <source srcset=".{{ url }}.avif" type="image/avif" />
+  <source srcset=".{{ url }}.webp" type="image/webp" />
+  <img class="{{ class }}" src=".{{ url }}.jpg" alt="" loading="lazy" />
+</picture>
+{% endmacro %}
+
 <div id="avatars" class="ui__content">
   <div class="ui__wrap">
     <h4 class="ui__caption">Avatars</h4>
 
     {% for i in range(1, 20) %}
-    <img class="avatar" src="/img/avatars/item-{{ i }}.png" alt="" />
+    {{ image('/img/avatars/item-' + i + '', 'avatar') }}
     {% endfor %}
   </div>
 </div>
