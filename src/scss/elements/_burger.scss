@@ -6,7 +6,7 @@ $offset: 5;
   height: 30px;
 
   &:focus-visible {
-    outline: 2px solid black;
+    outline: 2px solid $white;
     border-radius: 4px;
   }
 
@@ -19,7 +19,7 @@ $offset: 5;
     height: 2px;
     transition: 0.3s all ease;
     border-radius: 1px;
-    background-color: black;
+    background-color: $white;
 
     &:nth-child(1) {
       transform: translate(-50%, calc(-50% - #{$offset}px));

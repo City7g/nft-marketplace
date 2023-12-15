@@ -196,6 +196,20 @@
   }
 }
 
+.collections__list .collection {
+  @media (max-width: 1199px) {
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
 .collection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -203,6 +217,7 @@
 }
 
 .collection__img {
+  display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;

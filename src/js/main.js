@@ -1,10 +1,26 @@
-const burger = document.querySelector('.burger')
+const burger = document.querySelector('.ui .burger')
 
 if (burger) {
   burger.addEventListener('click', e => {
     e.preventDefault()
 
     burger.classList.toggle('active')
+  })
+}
+
+const headerBurger = document.querySelector('.header__burger')
+const headerMobile = document.querySelector('.header__mobile')
+
+if (headerBurger && headerMobile) {
+  headerBurger.addEventListener('click', e => {
+    e.preventDefault()
+
+    document.body.style.overflow = headerBurger.classList.contains('active')
+      ? ''
+      : 'hidden'
+
+    headerBurger.classList.toggle('active')
+    headerMobile.classList.toggle('active')
   })
 }
 
