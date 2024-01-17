@@ -17,6 +17,8 @@ export const echoErrors = (form, errors) => {
     if (errors.hasOwnProperty(key)) {
       const input = form.querySelector(`input[name=${key}] + p`)
 
+      input.closest('.input').classList.add('error')
+
       if (input) {
         input.textContent = errors[key]
       }

@@ -9,7 +9,7 @@ block content
       h1.title-h2.section-form__title Create account
       p.text-p1.section-form__text Welcome! enter your details and start creating, collecting and selling NFTs.
 
-      form.form
+      form.form(novalidate)
         +input('text', 'username', 'Username')
         +input('email', 'email', 'Email Address')
         +input('password', 'password', 'Password')
