@@ -1,0 +1,32 @@
+.section-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.section-form__content {
+  padding: 100px 60px;
+  max-width: 460px;
+}
+
+.section-form__title {
+  margin-bottom: 20px;
+}
+
+.section-form__text {
+  margin-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form__btn {
+  margin-top: 15px;
+}

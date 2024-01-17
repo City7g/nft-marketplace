@@ -2,6 +2,7 @@ import gulp from 'gulp'
 import gulpSass from 'gulp-sass'
 import nodeSass from 'sass'
 import nunjucksRender from 'gulp-nunjucks-render'
+import pug from 'gulp-pug'
 import webpack from 'webpack-stream'
 import browsersync from 'browser-sync'
 
@@ -14,6 +15,7 @@ const browserSync = () => {
       baseDir: './dist/',
     },
     notify: false,
+    open: false,
     callbacks: {
       ready: function (err, bs) {
         bs.addMiddleware('*', function (req, res) {
@@ -30,19 +32,24 @@ const browserSync = () => {
 }
 
 const html = () => {
+  // return gulp
+  //   .src('./src/njk/**/*.njk')
+  //   .pipe(
+  //     nunjucksRender({
+  //       path: [
+  //         'src/njk/layout/',
+  //         'src/njk/components/',
+  //         'src/njk/sections/',
+  //         'src/njk/ui/',
+  //         'src/njk/mixins/',
+  //       ],
+  //     })
+  //   )
+  //   .pipe(gulp.dest('./dist'))
+  //   .pipe(browsersync.stream())
   return gulp
-    .src('./src/njk/**/*.njk')
-    .pipe(
-      nunjucksRender({
-        path: [
-          'src/njk/layout/',
-          'src/njk/components/',
-          'src/njk/sections/',
-          'src/njk/ui/',
-          'src/njk/mixins/',
-        ],
-      })
-    )
+    .src('./src/pug/pages/*.pug')
+    .pipe(pug())
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream())
 }
@@ -102,7 +109,8 @@ export default () => {
   font()
   resource()
   browserSync()
-  gulp.watch('./src/njk/**/*.njk', html)
+  // gulp.watch('./src/njk/**/*.njk', html)
+  gulp.watch('./src/pug/**/*.pug', html)
   gulp.watch('./src/scss/**/*.scss', style)
   gulp.watch('./src/js/**/*.js', script)
   gulp.watch('./src/img/**/*', image)

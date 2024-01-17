@@ -1,0 +1,123 @@
+include ../layouts/main
+
+block content
+  section
+    .container
+      .ui
+        aside.ui__aside
+          a(href='#text') Text
+          a(href='#avatars') Avatar
+          a(href='#buttons') Buttons
+          a(href='#all') All
+        .ui__main
+          h1 UI page
+          |         {% include &quot;text.njk&quot; %} {% include &quot;button.njk&quot; %}
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Button lg
+              |             {% for color in [colors[0], colors[1]] %}
+              button.btn.btn-lg.color(class='btn-{{ }}') {{ color }}
+              |             {% endfor %}
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Button sm
+              |             {% for color in [colors[0], colors[1]] %}
+              button.btn.btn-sm.color(class='btn-{{ }}') {{ color }}
+              |             {% endfor %}
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Button outline
+              |             {% for color in colors %}
+              button.btn.color(class='btn-outline-{{ }}') {{ color }}
+              |             {% endfor %}
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Button disabled
+              |             {% for color in colors %}
+              button.btn.color(class='btn-{{ }}' disabled='disabled')
+                | {{ color }}
+              |             {% endfor %}
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Burger
+              button.burger
+                span
+                span
+                span
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Input
+              input(type='text' placeholder='Type text')
+              input(type='email' placeholder='Type email')
+              input(type='password' placeholder='Type password')
+          .ui__content
+            .ui__wrap.ui__wrap--column
+              h4.ui__caption Input checkbox
+              .checkbox
+                input#checkbox(type='checkbox')
+                label(for='checkbox') Checkbox
+              .checkbox
+                input#checkboxChecked(type='checkbox' checked='checked')
+                label(for='checkboxChecked') Checkbox Checked
+              .checkbox
+                input#checkboxDisabled(type='checkbox' disabled='disabled')
+                label(for='checkboxDisabled') Checkbox Disabled
+          .ui__content
+            .ui__wrap.ui__wrap--column
+              h4.ui__caption Input radio
+              .radio
+                input#radio(type='radio' name='radio')
+                label(for='radio') Radio One
+              .radio
+                input#radioChecked(type='radio' name='radio' checked='checked')
+                label(for='radioChecked') Radio Two
+              .radio
+                input#radioDisabled(type='radio' name='radio' disabled='disabled')
+                label(for='radioDisabled') Radio Disabled
+          .ui__content
+            .ui__wrap.ui__wrap--column
+              h4.ui__caption Switches
+              .radio
+                input#switch(type='checkbox' role='switch')
+                label(for='switch') Switch One
+              .radio
+                input#switchChecked(type='checkbox' role='switch' checked='checked')
+                label(for='switchChecked') Switch Two
+              .radio
+                input#switchDisabled(type='checkbox' role='switch' disabled='disabled')
+                label(for='switchDisabled') Switch Disabled
+          .ui__content
+            .ui__wrap.ui__wrap--column
+              h4.ui__caption Select
+              select
+                option One
+                option Two
+                option Three
+              select(disabled='disabled')
+                option One
+                option Two
+                option Three
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Spinner
+              |             {% for color in colors %}
+              .spinner.color(class='spinner-{{ }}' role='status')
+              |             {% endfor %}
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Spinner
+              |             {% for color in [colors[0], colors[1]] %}
+              .spinner.spinner-sm.color(class='spinner-{{ }}' role='status')
+              |             {% endfor %}
+          |         {% include &quot;avatars.njk&quot; %}
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Spinner
+              |             {% for color in [colors[0], colors[1]] %}
+              .spinner.spinner-lg.color(class='spinner-{{ }}' role='status')
+              |             {% endfor %}
+          .ui__content
+            input#first(type='text')
+            input#second(type='text')
+            pre#three.
+

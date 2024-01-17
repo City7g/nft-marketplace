@@ -1,0 +1,17 @@
+include ../layouts/main
+
+block content
+  section.section-form
+    .section-form__image
+      img.section-form__img(src='/img/create-account.jpg' alt='')
+
+    .section-form__content
+      h1.title-h2.section-form__title Create account
+      p.text-p1.section-form__text Welcome! enter your details and start creating, collecting and selling NFTs.
+
+      form.form
+        +input('text', 'username', 'Username')
+        +input('email', 'email', 'Email Address')
+        +input('password', 'password', 'Password')
+        +input('password', 'confirm', 'Confirm Password')
+        button.btn.form__btn Create account
