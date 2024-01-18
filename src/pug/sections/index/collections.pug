@@ -1,0 +1,11 @@
+section.collections
+  .container
+    h2.title-h3.collections__title Trending Collection
+    p.text-p1.collections__text Checkout our weekly updated trending collection.
+    .collections__list
+      - for (var x = 1; x < 4; x++)
+        .collection
+          +image('/img/collections/item-' + x + '-1')(class="collection__img")
+          +image('/img/collections/item-' + x + '-2')(class="collection__img")
+          +image('/img/collections/item-' + x + '-3')(class="collection__img")
+          p.title-h5.collection__more 1025+

@@ -1,0 +1,11 @@
+section.categories
+  .container
+    h3.title-h3.categories__title Browse Categories
+    .categories__list
+      - for (var x = 1; x < 9; x++)
+        .category
+          .category__image
+            +image(`/img/category/item-${x}`).category__img
+            img.category__icon(src=`/img/category/icon-${x}.svg` alt='')
+          .category__content
+            p.title-h5.category__text Art

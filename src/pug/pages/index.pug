@@ -1,76 +1,9 @@
 include ../layouts/main
 
 block content
-  section.section-base
-    .container
-      .section-base__wrap
-        .section-base__content
-          h1.title-h1.section-base__title
-            | Discover digital art &amp; Collect NFTs
-          p.text-p1.section-base__text
-            | NFT marketplace UI created with Anima for Figma. Collect, buy and sell
-            | art from more than 20k NFT artists.
-          button.btn.btn-dark.section-base__btn Get Started
-          .list.section-base__list
-            .list__item
-              h4.title-h4.list__title 240k+
-              p.text-p1.list__text Total Sale
-            .list__item
-              h4.title-h4.list__title 100k+
-              p.text-p1.list__text Auctions
-            .list__item
-              h4.title-h4.list__title 240k+
-              p.text-p1.list__text Artists
-        .section-base__image
-          +img('/img/first-image', 'eager')(class="section-base__img")
-
-  section.collections
-    .container
-      h2.title-h3.collections__title Trending Collection
-      p.text-p1.collections__text Checkout our weekly updated trending collection.
-      .collections__list
-        - for (var x = 1; x < 4; x++)
-          .collection
-            +image('/img/collections/item-' + x + '-1')(class="collection__img")
-            +image('/img/collections/item-' + x + '-2')(class="collection__img")
-            +image('/img/collections/item-' + x + '-3')(class="collection__img")
-            p.title-h5.collection__more 1025+
-
-  section.categories
-    .container
-      h3.title-h3.categories__title Browse Categories
-      .categories__list
-        - for (var x = 1; x < 9; x++)
-          .category
-            .category__image
-              +image(`/img/category/item-${x}`).category__img
-              img.category__icon(src=`/img/category/icon-${x}.svg` alt='')
-            .category__content
-              p.title-h5.category__text Art
-
-  section.works
-    .container
-      h2.title-h3.works__title How it works
-      p.text-p1.works__title Find out how to get started
-      .works__list
-        .work
-          img.work__img(src='/img/info/item-1.svg' alt='')
-          h4.title-h5.work__title Setup Your wallet
-          p.text-p2.work__text
-            | Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.
-        .work
-          img.work__img(src='/img/info/item-2.svg' alt='')
-          h4.title-h5.work__title Create Collection
-          p.text-p2.work__text
-            | Upload your work and setup your collection. Add a description, social links and floor price.
-        .work
-          img.work__img(src='/img/info/item-3.svg' alt='')
-          h4.title-h5.work__title Start Earning
-          p.text-p2.work__text
-            | Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.
-
-  section.highlight
-    .container
-      .highlight__wrap
-        h2.title-h2.highlight__title Magic Mashrooms
-        button.btn.highlight__btn See NFT
+  //- include ../sections/index/first
+  //- include ../sections/index/collections
+  //- include ../sections/index/categories
+  //- include ../sections/index/works
+  //- include ../sections/index/highlight
+  include ../sections/index/creators

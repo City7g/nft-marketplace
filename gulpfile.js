@@ -65,7 +65,7 @@ const style = () => {
 
 const script = () => {
   return gulp
-    .src('./src/js/main.ts')
+    .src('./src/js/main.js')
     .pipe(webpack(config))
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream())
