@@ -1,6 +1,8 @@
+import form from './form.js'
+
 const burger = document.querySelector('.ui .burger')
 
-import form from './form.js'
+console.log(process.env.API_SECRET)
 
 window.addEventListener('DOMContentLoaded', () => {
   form()
@@ -64,7 +66,7 @@ document.querySelectorAll('.ui__aside a').forEach(i => {
             : 'none'
 
         setTimeout(() => {
-          window.scrollTo(0, 0)
+          window.scrollTo(0, 10)
         }, 0)
       })
     }

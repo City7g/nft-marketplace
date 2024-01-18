@@ -1,10 +1,11 @@
 import gulp from 'gulp'
 import gulpSass from 'gulp-sass'
 import nodeSass from 'sass'
-import nunjucksRender from 'gulp-nunjucks-render'
 import pug from 'gulp-pug'
 import webpack from 'webpack-stream'
 import browsersync from 'browser-sync'
+
+import config from './webpack.config.js'
 
 const sass = gulpSass(nodeSass)
 browsersync.create()
@@ -64,15 +65,8 @@ const style = () => {
 
 const script = () => {
   return gulp
-    .src('./src/js/main.js')
-    .pipe(
-      webpack({
-        mode: 'development',
-        output: {
-          filename: 'main.js',
-        },
-      })
-    )
+    .src('./src/js/main.ts')
+    .pipe(webpack(config))
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream())
 }
