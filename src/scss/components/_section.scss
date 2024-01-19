@@ -1,6 +1,6 @@
 .section-base {
   padding: 40px 0;
-  
+
   @media (min-width: $xl) {
     padding: 60px 0;
   }
@@ -10,7 +10,7 @@
   display: grid;
   align-items: center;
   gap: 40px;
-  
+
   @media (min-width: $xl) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -22,9 +22,13 @@
   }
 }
 
+.section-base__img {
+  width: 100%;
+}
+
 .section-base__title {
   margin-bottom: 10px;
-  
+
   @media (min-width: $xl) {
     margin-bottom: 20px;
   }
@@ -32,7 +36,7 @@
 
 .section-base__btn {
   margin-top: 20px;
-  
+
   @media (min-width: $xl) {
     margin-top: 40px;
   }
