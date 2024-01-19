@@ -32,6 +32,10 @@ $offset: 5;
     &:nth-child(3) {
       transform: translate(-50%, calc(-50% + #{$offset}px));
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
   }
 
   &.active span {

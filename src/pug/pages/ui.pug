@@ -15,25 +15,8 @@ block content
             .ui__wrap
               h4.ui__caption Button lg
               button.btn Primary button
-          .ui__content
-            .ui__wrap
-              h4.ui__caption Button sm
-              |             {% for color in [colors[0], colors[1]] %}
-              button.btn.btn-sm.color(class='btn-{{ }}') {{ color }}
-              |             {% endfor %}
-          .ui__content
-            .ui__wrap
-              h4.ui__caption Button outline
-              |             {% for color in colors %}
-              button.btn.color(class='btn-outline-{{ }}') {{ color }}
-              |             {% endfor %}
-          .ui__content
-            .ui__wrap
-              h4.ui__caption Button disabled
-              |             {% for color in colors %}
-              button.btn.color(class='btn-{{ }}' disabled='disabled')
-                | {{ color }}
-              |             {% endfor %}
+              button.btn(disabled) Disabled button
+
           .ui__content
             .ui__wrap
               h4.ui__caption Burger
@@ -47,6 +30,7 @@ block content
               input(type='text' placeholder='Type text')
               input(type='email' placeholder='Type email')
               input(type='password' placeholder='Type password')
+              input(type='text' placeholder='Type text' disabled)
           .ui__content
             .ui__wrap.ui__wrap--column
               h4.ui__caption Input checkbox

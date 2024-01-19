@@ -40,7 +40,11 @@
     background-color: $black;
     transform: scaleX(0);
     transform-origin: right;
-    transition: .3s transform ease;
+    transition: 0.3s transform ease;
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
   }
 }
 
