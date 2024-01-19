@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'WorkSans';
   background-color: $black;
   color: $white;
@@ -11,7 +14,22 @@ body {
   }
 }
 
+main {
+  flex-grow: 1;
+}
+
 ::selection {
   background-color: $white;
   color: $black;
+}
+
+.target-info {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+  font-size: 12px;
+  background-color: green;
+  color: #fff;
+  padding: 4px;
 }

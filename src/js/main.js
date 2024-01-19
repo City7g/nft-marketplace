@@ -1,4 +1,7 @@
 import form from './form.js'
+import dev from './dev.js'
+
+dev()
 
 const burger = document.querySelector('.ui .burger')
 
