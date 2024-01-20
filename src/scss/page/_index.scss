@@ -142,6 +142,48 @@
 
 .highlight {
   padding: 60px 0;
+  height: 100vh;
+  min-height: 400px;
+  background-image: linear-gradient(to bottom, transparent, $primary), url('/img/highlight.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.highlight__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.time {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.time__text {
+  margin-bottom: 10px;
+}
+
+.time__timer {
+  display: flex;
+}
+
+.time__value {
+  margin-bottom: 5px;
+}
+
+.time__separator {
+  margin-left: 13px;
+  margin-right: 10px;
 }
 
 .discover {
