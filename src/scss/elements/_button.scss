@@ -16,7 +16,6 @@ $primary-btn-color: $primary;
     background-color: darken($primary-btn-color, 5);
   }
 
-  &:focus,
   &:focus-visible {
     outline: none;
     background-color: darken($primary-btn-color, 5);

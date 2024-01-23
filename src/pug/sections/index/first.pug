@@ -1,14 +1,14 @@
-section.section-base
+section.index-first
   .container
-    .section-base__wrap
-      .section-base__content
-        h1.title-h1.section-base__title
+    .index-first__wrap
+      .index-first__content
+        h1.title-h1.index-first__title
           | Discover digital art &amp; Collect NFTs
-        p.text-p1.section-base__text
+        p.text-p1.index-first__text
           | NFT marketplace UI created with Anima for Figma. Collect, buy and sell
           | art from more than 20k NFT artists.
-        button.btn.btn-dark.section-base__btn Get Started
-        .list.section-base__list
+        button.btn.btn-dark.index-first__btn Get Started
+        .list.index-first__list
           .list__item
             h4.title-h4.list__title 240k+
             p.text-p1.list__text Total Sale
@@ -18,5 +18,9 @@ section.section-base
           .list__item
             h4.title-h4.list__title 240k+
             p.text-p1.list__text Artists
-      .section-base__image
-        +img('/img/first-image', 'eager')(class="section-base__img")
+      .index-first__card
+        .index-first__image
+          +img('/img/first-image', 'eager')(class="index-first__img")
+        .index-first__info
+          h3.title-h5.index-first__name Space Walking
+          h4.text-p1.index-first__author Animakid

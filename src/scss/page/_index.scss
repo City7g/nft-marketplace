@@ -2,6 +2,79 @@
   padding: 40px;
 }
 
+.index-first {
+  padding: 40px 0;
+
+  @media (min-width: $xl) {
+    padding: 60px 0;
+  }
+}
+
+.index-first__wrap {
+  display: grid;
+  align-items: center;
+  gap: 30px;
+
+  @media (min-width: $xl) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.index-first__image {
+  @media (max-width: 1199px) {
+    order: -1;
+  }
+}
+
+.index-first__img {
+  width: 100%;
+}
+
+.index-first__title {
+  margin-bottom: 10px;
+
+  @media (min-width: $xl) {
+    margin-bottom: 20px;
+  }
+}
+
+.index-first__btn {
+  margin-top: 20px;
+
+  @media (min-width: $xl) {
+    margin-top: 40px;
+  }
+}
+
+.index-first__list {
+  margin-top: 30px;
+}
+
+.index-first__card {
+  border-radius: 20px;
+  background-color: #3b3b3b;
+  overflow: hidden;
+}
+
+.index-first__info {
+  padding: 22px 20px;
+
+  @media (min-width: $xl) {
+    padding: 20px;
+  }
+}
+
+.index-first__img {
+  aspect-ratio: 1 / 0.66;
+  object-fit: cover;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
 .categories {
   margin: 40px 0;
 
@@ -144,7 +217,8 @@
   padding: 60px 0;
   height: 100vh;
   min-height: 400px;
-  background-image: linear-gradient(to bottom, transparent, $primary), url('/img/highlight.png');
+  background-image: linear-gradient(to bottom, transparent, $primary),
+    url('/img/highlight.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

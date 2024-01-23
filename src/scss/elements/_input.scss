@@ -14,11 +14,14 @@ input[type='tel'] {
   border-radius: 6px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-  &:focus,
-  &:active {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba($primary, 0.25);
-    border-color: $primary;
+  &:focus {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
   }
 }
 
