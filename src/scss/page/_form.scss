@@ -1,12 +1,24 @@
 .section-form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .section-form__content {
-  padding: 100px 60px;
-  max-width: 460px;
+  padding: 30px 30px 40px;
+
+  @media (min-width: 768px) {
+    padding: 40px;
+    max-width: 325px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 60px;
+    max-width: 460px;
+  }
 }
 
 .section-form__title {
