@@ -12,7 +12,7 @@ input[role='switch'] {
   }
 
   &:checked {
-    background-color: #0d6efd;
+    background-color: $primary;
   }
 
   &:checked::after {
