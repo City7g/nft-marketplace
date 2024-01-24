@@ -224,6 +224,10 @@
   background-size: cover;
 }
 
+.highlight .container {
+  height: 100%;
+}
+
 .highlight__wrap {
   display: flex;
   justify-content: space-between;
@@ -232,8 +236,13 @@
 
   @media (max-width: 1199px) {
     flex-direction: column;
+    justify-content: flex-end;
     align-items: stretch;
   }
+}
+
+.highlight__title {
+  margin-bottom: 30px;
 }
 
 .time {
@@ -249,6 +258,7 @@
 
 .time__timer {
   display: flex;
+  justify-content: center;
 }
 
 .time__value {

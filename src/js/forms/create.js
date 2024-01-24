@@ -1,6 +1,6 @@
 import { z } from 'zod'
-import { formDataToObject } from './utils/form.js'
-import { echoErrors, formatZodError } from './utils/formatZodError.js'
+import { formDataToObject } from '../utils/form.js'
+import { echoErrors, formatZodError } from '../utils/formatZodError.js'
 
 const formSchema = z
   .object({

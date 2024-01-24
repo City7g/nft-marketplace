@@ -30,6 +30,29 @@
   margin-top: 20px;
 }
 
+.footer__subscribe {
+  margin-top: 20px;
+}
+
+.subscribe {
+  position: relative;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.subscribe__btn {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 .footer__copy {
   margin-top: 30px;
   margin-bottom: 20px;

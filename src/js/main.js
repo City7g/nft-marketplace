@@ -1,4 +1,5 @@
-import form from './form.js'
+import create from './forms/create.js'
+import subscribe from './forms/subscribe.js'
 import dev from './dev.js'
 
 dev()
@@ -8,7 +9,8 @@ const burger = document.querySelector('.ui .burger')
 console.log(process.env.API_SECRET)
 
 window.addEventListener('DOMContentLoaded', () => {
-  form()
+  create()
+  subscribe()
 })
 
 if (burger) {

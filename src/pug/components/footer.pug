@@ -18,5 +18,10 @@ footer.footer
         p.text-main.footer__text
         | Get exclusive promotions & updates straight to your inbox.
 
+        form.subscribe.footer__subscribe(novalidate)
+          +input('email', 'email', 'Enter your email here')
+          //- input.subscribe__field(type='text' placeholder='Enter your email here')
+          button.btn.subscribe__btn(type='submit') Subscribe
+
     .footer__copy
     | Ⓒ NFT Market. Use this template freely.
