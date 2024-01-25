@@ -10,13 +10,24 @@ input[type='tel'] {
   line-height: 1.5;
   color: $black;
   background-color: $white;
-  border: 1px solid #dee2e6;
+  // border: 1px solid #dee2e6;
   border-radius: 6px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: outline-color 0.4s ease-in-out, outline-offset 0.4s ease-in-out;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 
   &:focus {
     outline: 2px solid $primary;
     outline-offset: 2px;
+  }
+
+  &:hover {
+    outline: 2px solid rgba($primary, .8);
+    outline-offset: 2px;
+  }
+
+  &:focus:hover {
+    outline-offset: 4px;
   }
 
   &:disabled {

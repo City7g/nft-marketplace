@@ -81,24 +81,4 @@ block content
           .ui__content
             .ui__wrap
               h4.ui__caption Spinner
-              |             {% for color in colors %}
-              .spinner.color(class='spinner-{{ }}' role='status')
-              |             {% endfor %}
-          .ui__content
-            .ui__wrap
-              h4.ui__caption Spinner
-              |             {% for color in [colors[0], colors[1]] %}
-              .spinner.spinner-sm.color(class='spinner-{{ }}' role='status')
-              |             {% endfor %}
-          |         {% include &quot;avatars.njk&quot; %}
-          .ui__content
-            .ui__wrap
-              h4.ui__caption Spinner
-              |             {% for color in [colors[0], colors[1]] %}
-              .spinner.spinner-lg.color(class='spinner-{{ }}' role='status')
-              |             {% endfor %}
-          .ui__content
-            input#first(type='text')
-            input#second(type='text')
-            pre#three.
-
+              .spinner.color(role='status')
