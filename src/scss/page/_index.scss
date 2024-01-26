@@ -95,6 +95,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
+  view-transition-name: categories;
 
   @media (min-width: 360px) {
     grid-template-columns: repeat(2, 1fr);
@@ -106,10 +107,98 @@
   }
 }
 
+.categories__list.active {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .category {
   overflow: hidden;
   background-color: #3b3b3b;
   border-radius: 20px;
+  view-transition-name: one;
+
+  &:nth-child(2) {
+    view-transition-name: two;
+  }
+  &:nth-child(3) {
+    view-transition-name: three;
+  }
+  &:nth-child(4) {
+    view-transition-name: four;
+  }
+  &:nth-child(5) {
+    view-transition-name: five;
+  }
+  &:nth-child(6) {
+    view-transition-name: six;
+  }
+  &:nth-child(7) {
+    view-transition-name: seven;
+  }
+  &:nth-child(8) {
+    view-transition-name: eight;
+  }
+  &:nth-child(9) {
+    view-transition-name: nine;
+  }
+}
+
+::view-transition-old {
+  animation: 2000ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+::view-transition-old {
+  animation: 2000ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+::view-transition-old(one),
+::view-transition-old(two),
+::view-transition-old(three),
+::view-transition-old(four),
+::view-transition-old(five),
+::view-transition-old(six),
+::view-transition-old(seven),
+::view-transition-old(eight),
+::view-transition-old(nine) {
+  animation: 200ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+::view-transition-new(one),
+::view-transition-new(two),
+::view-transition-new(three),
+::view-transition-new(four),
+::view-transition-new(five),
+::view-transition-new(six),
+::view-transition-new(seven),
+::view-transition-new(eight),
+::view-transition-new(nine) {
+  animation: 200ms 100ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-from-right {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-to-left {
+  to {
+    transform: scale(0.3);
+    opacity: 0;
+  }
 }
 
 .category__image {

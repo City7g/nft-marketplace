@@ -77,3 +77,19 @@ document.querySelectorAll('.ui__aside a').forEach(i => {
     }
   })
 })
+
+if (document.startViewTransition) {
+  window.addEventListener('click', () => {
+    document.startViewTransition(async () => {
+      document.querySelector('.categories__list').classList.toggle('active')
+    })
+    // const categories = document.querySelectorAll('.category')
+    //   categories.forEach(category => {
+    //     if (Math.random() > 0.5) {
+    //       category.style.display = 'none'
+    //     } else {
+    //       category.style.display = ''
+    //     }
+    //   })
+  })
+}
