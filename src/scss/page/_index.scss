@@ -108,7 +108,14 @@
 }
 
 .categories__list.active {
-  grid-template-columns: repeat(2, 1fr);
+  @media (min-width: 360px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 .category {
