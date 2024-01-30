@@ -1,14 +1,20 @@
-import gulp from 'gulp'
+import pkg from 'gulp'
+const { gulp, src, dest, parallel, series, watch } = pkg
+
+// import gulp from 'gulp'
 import gulpSass from 'gulp-sass'
 import nodeSass from 'sass'
 import pug from 'gulp-pug'
 import webpack from 'webpack-stream'
 import browsersync from 'browser-sync'
+import responsive from 'gulp-responsive'
+
 
 import config from './webpack.config.js'
 
 const sass = gulpSass(nodeSass)
-browsersync.create()
+
+// browsersync.create()
 
 const browserSync = () => {
   browsersync.init({
@@ -29,7 +35,7 @@ const browserSync = () => {
     },
   })
 
-  gulp.watch('./dist', browserSync.reload)
+  watch('./dist', browserSync.reload)
 }
 
 const html = () => {
@@ -48,39 +54,76 @@ const html = () => {
   //   )
   //   .pipe(gulp.dest('./dist'))
   //   .pipe(browsersync.stream())
-  return gulp
-    .src('./src/pug/pages/*.pug')
+  return src('./src/pug/pages/*.pug')
     .pipe(pug())
-    .pipe(gulp.dest('./dist'))
+    .pipe(dest('./dist'))
     .pipe(browsersync.stream())
 }
 
 const style = () => {
-  return gulp
-    .src('./src/scss/main.scss')
+  return src('./src/scss/main.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./dist'))
+    .pipe(dest('./dist'))
     .pipe(browsersync.stream())
 }
 
 const script = () => {
-  return gulp
-    .src('./src/js/main.js')
+  return src('./src/js/main.js')
     .pipe(webpack(config))
-    .pipe(gulp.dest('./dist'))
+    .pipe(dest('./dist'))
     .pipe(browsersync.stream())
 }
 
 const image = () => {
-  return gulp.src('./src/img/**/*').pipe(gulp.dest('./dist/img'))
+  return src('./src/img/**/*').pipe(dest('./dist/img'))
+}
+
+const convert = () => {
+  return src('./src/img/**/*.png')
+    .pipe(responsive({
+      // produce multiple images from one source
+      '**/*.png': [
+        {
+          width: '100%',
+          height: '100%',
+          format: 'webp',
+          rename: {
+            suffix: '-1x',
+            extname: '.webp'
+          }
+        },
+        {
+          withoutEnlargement: false,
+          width: '200%',
+          height: '200%',
+          format: 'webp',
+          rename: {
+            suffix: '-2x',
+            extname: '.webp'
+          }
+        },
+        {
+          withoutEnlargement: false,
+          width: '300%',
+          height: '300%',
+          format: 'webp',
+          rename: {
+            suffix: '-3x',
+            extname: '.webp'
+          }
+        }
+      ]
+      })
+    )
+    .pipe(dest('./dist/img'))
 }
 
 const font = () => {
-  return gulp.src('./src/font/**/*').pipe(gulp.dest('./dist/font/'))
+  return src('./src/font/**/*').pipe(dest('./dist/font/'))
 }
 
 const resource = () => {
-  return gulp.src('./src/resource/**/*').pipe(gulp.dest('./dist/'))
+  return src('./src/resource/**/*').pipe(dest('./dist/'))
 }
 
 const build = done => {
@@ -93,7 +136,7 @@ const build = done => {
   done()
 }
 
-export { html, style, script, image, font, browserSync, build }
+export { html, style, script, image, font, browserSync, build, convert }
 
 export default () => {
   html()
@@ -103,11 +146,11 @@ export default () => {
   font()
   resource()
   browserSync()
-  // gulp.watch('./src/njk/**/*.njk', html)
-  gulp.watch('./src/pug/**/*.pug', html)
-  gulp.watch('./src/scss/**/*.scss', style)
-  gulp.watch('./src/js/**/*.js', script)
-  gulp.watch('./src/img/**/*', image)
-  gulp.watch('./src/font/**/*', font)
-  gulp.watch('./src/resource/**/*', resource)
+  // watch('./src/njk/**/*.njk', html)
+  watch('./src/pug/**/*.pug', html)
+  watch('./src/scss/**/*.scss', style)
+  watch('./src/js/**/*.js', script)
+  watch('./src/img/**/*', image)
+  watch('./src/font/**/*', font)
+  watch('./src/resource/**/*', resource)
 }
