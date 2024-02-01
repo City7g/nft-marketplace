@@ -3,6 +3,7 @@
     font-family: $font-family;
     src: url("/font/#{$font-family}/#{$font-name}.woff2") format("woff2"),
       url("/font/#{$font-family}/#{$font-name}.woff") format("woff");
+
     font-weight: $weight;
     font-style: $style;
   }
@@ -10,20 +11,24 @@
 
 @mixin font($size, $height: false, $weight: false, $uppercase: false, $spacing: false) {
   font-size: $size + px;
-  @if($height != false) {
-    @if($height < 2) {
+
+  @if $height != false {
+    @if $height < 2 {
       line-height: $height;
     } @else {
       line-height: $height + px;
     }
   }
-  @if($weight != false) {
+
+  @if $weight != false {
     font-weight: $weight;
   }
-  @if($uppercase != false) {
+
+  @if $uppercase != false {
     font-weight: $weight;
   }
-  @if($spacing != false) {
+
+  @if $spacing != false {
     font-weight: $weight;
   }
 }
@@ -32,5 +37,6 @@
   display: -webkit-box;
   -webkit-line-clamp: $count;
   -webkit-box-orient: vertical;
+
   overflow: hidden;
 }

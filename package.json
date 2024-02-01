@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "stylelint": "stylelint \"./src/scss/**/*.scss\" --fix"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,11 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.58.3",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.1.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack-stream": "^7.0.0"

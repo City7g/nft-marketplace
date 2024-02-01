@@ -1,16 +1,19 @@
 .header {
+  z-index: 10000;
+
   // position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  z-index: 10000;
+  left: 0;
+
   background-color: $black;
 }
 
 .header__wrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
   height: 54px;
   padding: 0 30px;
 
@@ -30,17 +33,21 @@
     top: 54px;
     right: 0;
     bottom: 0;
+
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    justify-content: flex-start;
+
     width: 100%;
     max-width: 300px;
     padding: 10px 30px 20px;
-    background-color: $black;
+
+    transition: 0.3s transform ease;
     transform: scaleX(0);
     transform-origin: right;
-    transition: 0.3s transform ease;
+
+    background-color: $black;
 
     @media (prefers-reduced-motion: reduce) {
       transition: none;
@@ -68,17 +75,18 @@
 }
 
 .header-nav__link {
-  color: $white;
   transition: 0.3s color ease;
+
+  color: $white;
 
   &:hover {
     color: rgba($white, 0.4);
   }
 
   &:focus-visible {
+    border-radius: 3px;
     outline: 1px solid white;
     outline-offset: 3px;
-    border-radius: 3px;
   }
 }
 
@@ -88,15 +96,17 @@
   gap: 12px;
 
   &:focus-visible {
+    border-radius: 2px;
     outline: 2px solid white;
     outline-offset: 3px;
-    border-radius: 2px;
   }
 }
 
 .header-logo__text {
-  color: $white;
-  font-family: 'SpaceMono';
-  font-weight: 700;
   white-space: nowrap;
+
+  color: $white;
+
+  font-family: SpaceMono;
+  font-weight: 700;
 }

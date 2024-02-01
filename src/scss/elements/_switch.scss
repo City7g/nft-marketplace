@@ -1,12 +1,15 @@
 input[role='switch'] {
   width: 32px;
   height: 16px;
+
   border-radius: 8px;
 
   &::after {
-    transform: translate(calc(-50% - 8px), -50%);
     width: 12px;
     height: 12px;
+
+    transform: translate(calc(-50% - 8px), -50%);
+
     border-radius: 50%;
     background: #dfdfdf;
   }
@@ -17,6 +20,7 @@ input[role='switch'] {
 
   &:checked::after {
     transform: translate(calc(-50% + 8px), -50%);
+
     background: white;
   }
 }

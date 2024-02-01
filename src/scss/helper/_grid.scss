@@ -5,17 +5,7 @@ body {
 }
 
 .grid::before {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-
-  content: "";
-  pointer-events: none;
-
-  --grid-color: rgb(255 0 0 / 0.1);
+  --grid-color: rgb(255 0 0 / 10%);
   --grid-sides: 15px;
   --grid-gutter: 30px;
   --grid-columns: 12;
@@ -23,6 +13,12 @@ body {
   --grid-column-width: calc(
     (100% - var(--grid-gutter) * var(--grid-columns)) / var(--grid-columns)
   );
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+
+  content: "";
+  pointer-events: none;
 
   border: solid rgba(#007EFF, 0.2);
   border-width: 0 max(calc((var(--screen-width) - var(--grid-max-width)) / 2), calc(var(--grid-sides) - var(--grid-gutter) / 2));

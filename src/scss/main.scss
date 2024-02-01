@@ -4,12 +4,10 @@
 @import './helper/breakpoint';
 @import './helper/mixins';
 @import './helper/ui';
-
 @import './base/reset';
 @import './base/main';
 @import './base/fonts';
 @import './base/container';
-
 @import './elements/button';
 @import './elements/input';
 @import './elements/checkbox';
@@ -18,11 +16,9 @@
 @import './elements/select';
 @import './elements/burger';
 @import './elements/spinner';
-
 @import './components/header';
 @import './components/footer';
 @import './components/section';
-
 @import './page/index';
 @import './page/about';
 @import './page/form';

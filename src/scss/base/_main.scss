@@ -1,13 +1,16 @@
 body {
   display: flex;
   flex-direction: column;
+
   min-height: 100vh;
-  font-family: 'WorkSans';
-  background-color: $black;
+  padding-top: 54px;
+
   color: $white;
+  background-color: $black;
+
+  font-family: WorkSans;
   font-size: 16px;
   line-height: 1.6;
-  padding-top: 54px;
 
   @media (min-width: 1200px) {
     padding-top: 100px;
@@ -19,17 +22,20 @@ main {
 }
 
 ::selection {
-  background-color: $white;
   color: $black;
+  background-color: $white;
 }
 
 .target-info {
   position: absolute;
-  left: 0;
-  top: 100%;
   z-index: 1;
-  font-size: 12px;
-  background-color: green;
-  color: #fff;
+  top: 100%;
+  left: 0;
+
   padding: 4px;
+
+  color: #fff;
+  background-color: green;
+
+  font-size: 12px;
 }

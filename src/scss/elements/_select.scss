@@ -1,17 +1,20 @@
 select {
   display: block;
+
   width: 100%;
   padding: 6px 36px 6px 12px;
+
   border: 1px solid #dee2e6;
   border-radius: 6px;
+  background-color: #fff;
+  background-image: url('/img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 12px;
+
   font-size: 16px;
   line-height: 1.5;
   appearance: none;
-  background-color: #fff;
-  background-image: url('/img/arrow.svg');
-  background-size: 16px 12px;
-  background-position: right 12px center;
-  background-repeat: no-repeat;
 
   &:focus-visible {
     border: 1px solid #0d6efd;
@@ -20,8 +23,9 @@ select {
   }
 
   &:disabled {
-    background-color: #e9ecef;
-    border-color: #dee2e6;
     cursor: not-allowed;
+
+    border-color: #dee2e6;
+    background-color: #e9ecef;
   }
 }
