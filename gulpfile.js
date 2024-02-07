@@ -9,7 +9,6 @@ import webpack from 'webpack-stream'
 import browsersync from 'browser-sync'
 import responsive from 'gulp-responsive'
 
-
 import config from './webpack.config.js'
 
 const sass = gulpSass(nodeSass)
@@ -79,10 +78,10 @@ const image = () => {
 }
 
 const convert = () => {
-  return src('./src/img/**/*.png')
+  return src('./src/img/**/*.{png,jpg}')
     .pipe(responsive({
       // produce multiple images from one source
-      '**/*.png': [
+      '**/*': [
         {
           width: '100%',
           height: '100%',
