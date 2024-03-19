@@ -1,10 +1,11 @@
 mixin tabs(list)
   ul.tabs&attributes(attributes)
-    //- each val in tabs
     - for (var x = 0; x < list.length; x++)
-      if(!x)
-        li.title-h5.tabs__item.active
-          p.title-h5= list[x]
-      else
-        li.title-h5.tabs__item
-          p.title-h5= list[x]
+      li.title-h5.tabs__item(class=`${!x && 'active'}`)
+        if (list[x].titleMobile)
+          p.title-h5.tabs__title.tabs__title-desktop= list[x].title
+          p.title-h5.tabs__title.tabs__title-mobile= list[x].titleMobile
+        else
+          p.title-h5.tabs__title= list[x].title
+        if (list[x].count)
+          p.text-p1= list[x].count

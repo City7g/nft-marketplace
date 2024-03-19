@@ -5,6 +5,10 @@
 }
 
 .tabs__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   padding: 15px 10px 13px;
   border-bottom: 2px solid transparent;
   cursor: pointer;
@@ -21,7 +25,6 @@
 
 .tabs__item .text-p1 {
   padding: 5px 10px;
-  margin-left: 16px;
   border-radius: 20px;
   background-color: #3b3b3b;
 
@@ -37,4 +40,16 @@
 
 .tabs__item.active .text-p1 {
   background-color: #858584;
+}
+
+.tabs__title-desktop {
+  @media (max-width: 449px) {
+    display: none;
+  }
+}
+
+.tabs__title-mobile {
+  @media (min-width: 450px) {
+    display: none;
+  }
 }

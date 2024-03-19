@@ -1,10 +1,8 @@
+- const tabs = [{ title: 'NFTs', count: '302' }, { title: 'Collections', count: '67' }]
+
 section.market-list
   .container
-    .market-list__tabs
-      .title-h5.market-list__tab.active NFTs
-        span.text-p1 302
-      .title-h5.market-list__tab Collections
-        span.text-p1 67
+    +tabs(tabs).ranking-list__tabs
   .market-list__content
     .container
       .market-list__wrap

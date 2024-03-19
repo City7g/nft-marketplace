@@ -1,7 +1,9 @@
+- const tabs = [{ title: 'Today', titleMobile: '1d' }, { title: 'This Week', titleMobile: '7d' }, { title: 'This Month', titleMobile: '30d' }, { title: 'All Time', titleMobile: 'All' }]
+
 section.ranking-list
   .container
     .ranking-list__wrap
-      +tabs(['Today', 'This Week', 'This Month', 'All Time']).ranking-list__tabs
+      +tabs(tabs).ranking-list__tabs
 
     .table.ranking-list__table
       .table__header
