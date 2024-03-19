@@ -3,10 +3,11 @@
 section.market-list
   .container
     +tabs(tabs).ranking-list__tabs
+
   .market-list__content
     .container
       .market-list__wrap
-        - for (var x = 1; x < 4; x++)
+        - for (var x = 1; x < 10; x++)
           .nft-card.nft-card--black
             .nft-card__image
               img.nft-card__img(src=`/img/avatars/item-${x + 4}.png` alt='')

@@ -18,12 +18,12 @@
   border-bottom-color: #858584;
 }
 
-.tabs__item.title-h5 {
+.tabs__item {
   color: #858584;
   transition: 0.3s color ease;
 }
 
-.tabs__item .text-p1 {
+.tabs__count {
   padding: 5px 10px;
   border-radius: 20px;
   background-color: #3b3b3b;
@@ -33,12 +33,12 @@
   }
 }
 
-.tabs__item.active.title-h5,
-.tabs__item.title-h5:hover {
+.tabs__item.active,
+.tabs__item:hover {
   color: white;
 }
 
-.tabs__item.active .text-p1 {
+.tabs__item.active .tabs__count {
   background-color: #858584;
 }
 

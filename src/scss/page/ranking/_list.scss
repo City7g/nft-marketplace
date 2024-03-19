@@ -24,6 +24,11 @@
   @media (min-width: 1200px) {
     grid-template-columns: 30px 60px 1fr repeat(3, 145px);
   }
+
+  @media (max-width: 359px) {
+    grid-template-columns: 24px 24px 1fr 60px;
+    gap: 8px;
+  }
 }
 
 .table__header {
@@ -63,6 +68,11 @@
 
 .table__percent {
   color: #00ac4f;
+}
+
+.table__header > *:first-child,
+.table__row > *:first-child {
+  text-align: center;
 }
 
 .table__header > *:nth-last-child(2),
