@@ -4,7 +4,7 @@ input[type='radio'] {
   width: 16px;
   height: 16px;
 
-  transition: .3s ease;
+  transition: 0.3s ease;
   transition-property: box-shadow, border-color;
 
   border: 1px solid #dee2e6;
@@ -24,6 +24,7 @@ input[type='radio'] {
 
   &:disabled {
     cursor: not-allowed;
+    border-color: rgba(#dee2e6, 0.5);
   }
 
   &::after {

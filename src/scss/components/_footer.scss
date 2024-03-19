@@ -35,7 +35,7 @@
   margin-top: 20px;
 }
 
-.subscribe {
+.form-subscribe {
   position: relative;
 
   @media (max-width: 767px) {
@@ -45,7 +45,7 @@
   }
 }
 
-.subscribe__btn {
+.form-subscribe__btn {
   @media (min-width: 768px) {
     position: absolute;
     top: 0;

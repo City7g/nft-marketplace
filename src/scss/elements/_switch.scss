@@ -23,4 +23,8 @@ input[role='switch'] {
 
     background: white;
   }
+
+  &:disabled::after {
+    background: rgba(#dfdfdf, 0.5);
+  }
 }

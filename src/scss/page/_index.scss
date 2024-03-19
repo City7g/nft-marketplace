@@ -460,10 +460,11 @@
 }
 
 .subscribe__wrap {
+  display: grid;
+  gap: 30px;
   margin: 40px 0;
 
   @media (min-width: 768px) {
-    display: grid;
     align-items: center;
 
     margin-bottom: 80px;
@@ -472,7 +473,6 @@
     border-radius: 20px;
     background-color: #3b3b3b;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
   }
 
   @media (min-width: 1200px) {
@@ -483,6 +483,7 @@
 }
 
 .subscribe__img {
+  width: 100%;
   border-radius: 20px;
 }
 
@@ -608,17 +609,8 @@
 .creator {
   padding: 20px;
 
-  animation: reveal linear;
-  animation: reveal 2s;
-
   border-radius: 20px;
   background-color: #3b3b3b;
-
-  // animation-timeline: view();
-  // animation-play-state: paused;
-  animation-range-start: enter 20%;
-  animation-timeline: view();
-  animation-range: entry 0 enter 20%;
 
   @media (max-width: 1199px) {
     display: grid;
@@ -631,18 +623,6 @@
   @media (min-width: 1200px) {
     text-align: center;
   }
-}
-
-.creator:nth-child(2) {
-  animation-range: entry 10% enter 30%;
-}
-
-.creator:nth-child(3) {
-  animation-range: entry 20% enter 40%;
-}
-
-.creator:nth-child(4) {
-  animation-range: entry 30% enter 50%;
 }
 
 .creator__image {

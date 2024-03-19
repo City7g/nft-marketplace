@@ -37,7 +37,7 @@
 
 .ui__caption {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 20px;
 
   padding: 0 4px;
@@ -45,6 +45,22 @@
   transform: translateY(-50%);
 
   background-color: $black;
+}
+
+.ui__fonts {
+  flex-direction: column;
+}
+
+.ui__colors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+}
+
+.ui__color {
+  height: 150px;
+  border-radius: 26px;
+  background: white;
 }
 
 .avatar {
