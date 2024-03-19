@@ -1,0 +1,10 @@
+mixin tabs(list)
+  ul.tabs&attributes(attributes)
+    //- each val in tabs
+    - for (var x = 0; x < list.length; x++)
+      if(!x)
+        li.title-h5.tabs__item.active
+          p.title-h5= list[x]
+      else
+        li.title-h5.tabs__item
+          p.title-h5= list[x]

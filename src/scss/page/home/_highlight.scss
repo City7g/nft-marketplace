@@ -1,0 +1,59 @@
+.highlight {
+  height: 100vh;
+  min-height: 400px;
+  padding: 60px 0;
+
+  background-image: linear-gradient(to bottom, transparent, $primary),
+    url('/img/highlight.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.highlight .container {
+  height: 100%;
+}
+
+.highlight__wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  height: 100%;
+
+  @media (max-width: 1199px) {
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.highlight__title {
+  margin-bottom: 30px;
+}
+
+.time {
+  padding: 30px;
+
+  border-radius: 20px;
+  background: rgb(59 59 59 / 50%);
+  backdrop-filter: blur(5px);
+}
+
+.time__text {
+  margin-bottom: 10px;
+}
+
+.time__timer {
+  display: flex;
+  justify-content: center;
+}
+
+.time__value {
+  margin-bottom: 5px;
+}
+
+.time__separator {
+  margin-right: 10px;
+  margin-left: 13px;
+}

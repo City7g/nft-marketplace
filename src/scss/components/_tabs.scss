@@ -1,0 +1,40 @@
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  text-align: center;
+}
+
+.tabs__item {
+  padding: 15px 10px 13px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.tabs__item.active {
+  border-bottom-color: #858584;
+}
+
+.tabs__item.title-h5 {
+  color: #858584;
+  transition: 0.3s color ease;
+}
+
+.tabs__item .text-p1 {
+  padding: 5px 10px;
+  margin-left: 16px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.tabs__item.active.title-h5,
+.tabs__item.title-h5:hover {
+  color: white;
+}
+
+.tabs__item.active .text-p1 {
+  background-color: #858584;
+}

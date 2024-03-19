@@ -1,0 +1,80 @@
+.ranking-list {
+  padding-bottom: 40px;
+}
+
+.ranking-list__tabs {
+  margin-bottom: 40px;
+}
+
+.table {
+}
+
+.table__header,
+.table__row {
+  display: grid;
+  grid-template-columns: 24px 24px 1fr 80px;
+  align-items: center;
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 24px 24px 1fr repeat(2, 100px);
+    gap: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 30px 60px 1fr repeat(3, 145px);
+  }
+}
+
+.table__header {
+  background-color: #2b2b2b;
+  padding: 11px 9px;
+  color: #858584;
+  border: 1px solid #3b3b3b;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    padding: 12px 20px;
+  }
+}
+
+.table__header > *:nth-child(2) {
+  grid-column: span 2;
+}
+
+.table__row {
+  padding: 12px 10px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+
+  @media (min-width: 768px) {
+    padding: 12px 20px;
+  }
+}
+
+.table__row + .table__row {
+  margin-top: 20px;
+}
+
+.table__avatar {
+  border-radius: 50%;
+}
+
+.table__percent {
+  color: #00ac4f;
+}
+
+.table__header > *:nth-last-child(2),
+.table__row > *:nth-last-child(2) {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.table__header > *:nth-last-child(1),
+.table__row > *:nth-last-child(1) {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}

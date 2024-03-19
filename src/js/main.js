@@ -94,7 +94,7 @@ if (document.startViewTransition) {
   })
 }
 
-const tabs = document.querySelectorAll('.market-list__tab')
+const tabs = document.querySelectorAll('.tabs__item')
 
 if (tabs.length) {
   tabs.forEach(tab => {

@@ -1,0 +1,22 @@
+section.ranking-list
+  .container
+    .ranking-list__wrap
+      +tabs(['Today', 'This Week', 'This Month', 'All Time']).ranking-list__tabs
+
+    .table.ranking-list__table
+      .table__header
+        p #
+        p Artist
+        p Change
+        p NFTs Sold
+        p Volume
+
+      .table__content
+        - for (var x = 1; x < 21; x++)
+          .table__row
+            .table__index= x
+            img(src=`/img/avatars/item-${x}.png`, alt="").table__avatar
+            .table__name Jaydon Ekstrom Bothman
+            .table__percent +1.41%
+            .table__sold 602
+            .table__volume 12.4 ETH
