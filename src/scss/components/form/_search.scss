@@ -1,0 +1,31 @@
+.form-search {
+  position: relative;
+}
+
+.form-search input {
+  background-color: transparent;
+  border: 1px solid #3b3b3b;
+  color: white;
+
+  &:placeholder {
+    color: #858584;
+  }
+}
+
+.form-search {
+  position: relative;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.form-search__btn {
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -93,3 +93,16 @@ if (document.startViewTransition) {
     //   })
   })
 }
+
+const tabs = document.querySelectorAll('.market-list__tab')
+
+if (tabs.length) {
+  tabs.forEach(tab => {
+    tab.addEventListener('click', e => {
+      e.preventDefault()
+
+      tabs.forEach(i => i.classList.remove('active'))
+      tab.classList.add('active')
+    })
+  })
+}
