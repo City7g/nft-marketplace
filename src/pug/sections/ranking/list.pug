@@ -15,7 +15,7 @@ section.ranking-list
 
       .table__content
         - for (var x = 1; x < 21; x++)
-          .table__row
+          a(href="/artist.html").table__row
             .table__index= x
             img(src=`/img/avatars/item-${x}.png`, alt="").table__avatar
             .table__name Ruben Carder

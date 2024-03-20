@@ -1,0 +1,23 @@
+- const tabs = [{ title: 'Created', count: '302' }, { title: 'Owned', count: '67' }, { title: 'Collection', count: '4' }]
+
+section.market-list
+  .container
+    +tabs(tabs).ranking-list__tabs
+
+  .market-list__content
+    .container
+      .market-list__wrap
+        - for (var x = 1; x < 10; x++)
+          .nft-card.nft-card--black
+            .nft-card__image
+              img.nft-card__img(src=`/img/avatars/item-${x + 4}.png` alt='')
+            .nft-card__content
+              h4.title-h5.nft-card__title Distant Galaxy
+              p.text-p2.nft-card__text MoonDancer
+              .nft-card__info
+                .nft-card__price
+                  h4.text-p3.nft-card__subtitle Price
+                  p.text-p2.nft-card__value 1.63 ETH
+                .nft-card__bit
+                  h4.text-p3.nft-card__subtitle Highest Bid
+                  p.text-p2.nft-card__value 0.33 wETH
