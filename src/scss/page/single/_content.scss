@@ -2,6 +2,13 @@
   padding: 40px 0;
 }
 
+.content__wrap {
+  @media (min-width: 1200px) {
+    position: relative;
+    padding-right: 400px;
+  }
+}
+
 .content__title {
   margin-bottom: 10px;
 }
@@ -13,6 +20,13 @@
 .content .timer {
   @media (max-width: 767px) {
     margin-top: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 295px;
   }
 }
 
@@ -40,7 +54,6 @@
 }
 
 .content__detail i {
-  font-size: 32px;
   color: #858584;
 }
 

@@ -39,17 +39,17 @@ if (headerBurger && headerMobile) {
 
 console.log(document.querySelector('img'))
 
-fetch(document.querySelector('img').src)
-  .then(response => response.blob())
-  .then(blob => {
-    var fileSizeInBytes = blob.size
-    var fileSizeInKB = fileSizeInBytes / 1024
+// fetch(document.querySelector('img').src)
+//   .then(response => response.blob())
+//   .then(blob => {
+//     var fileSizeInBytes = blob.size
+//     var fileSizeInKB = fileSizeInBytes / 1024
 
-    console.log('Размер изображения в килобайтах:', fileSizeInKB + ' KB')
-  })
-  .catch(error => {
-    console.error('Произошла ошибка при загрузке изображения:', error)
-  })
+//     console.log('Размер изображения в килобайтах:', fileSizeInKB + ' KB')
+//   })
+//   .catch(error => {
+//     console.error('Произошла ошибка при загрузке изображения:', error)
+//   })
 
 // if (window.location.pathname === '/ui.html') {
 //   document.querySelectorAll('.ui__content').forEach((i, index) => {
@@ -105,4 +105,37 @@ if (tabs.length) {
       tab.classList.add('active')
     })
   })
+}
+
+const timer = document.querySelector('.timer')
+
+if (timer) {
+  const getTimeUntilNextDay = () => {
+    const now = new Date()
+    const tomorrow = new Date(now)
+    tomorrow.setDate(now.getDate() + 1)
+    tomorrow.setHours(0, 0, 0, 0)
+
+    const timeUntilNextDay = tomorrow - now
+
+    const hours = Math.floor(timeUntilNextDay / (1000 * 60 * 60))
+    const minutes = Math.floor(
+      (timeUntilNextDay % (1000 * 60 * 60)) / (1000 * 60)
+    )
+    const seconds = Math.floor((timeUntilNextDay % (1000 * 60)) / 1000)
+
+    return { hours, minutes, seconds }
+  }
+
+  const updateTimer = () => {
+    const timer = getTimeUntilNextDay()
+
+    document.querySelector('.timer__hour').textContent = timer.hours
+    document.querySelector('.timer__minute').textContent = timer.minutes
+    document.querySelector('.timer__second').textContent = timer.seconds
+  }
+
+  setInterval(updateTimer, 1000)
+
+  updateTimer()
 }

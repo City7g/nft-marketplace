@@ -1,13 +1,18 @@
 .ui {
   display: grid;
-  grid-template-columns: 1fr 5fr;
   gap: 30px;
+  margin: 40px 0 30px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 5fr;
+  }
 }
 
 .ui__aside {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  margin-top: 10px;
 }
 
 .ui__content {
@@ -53,9 +58,11 @@
 
 .ui__colors {
   display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-auto-rows: 150px;
-  gap: 30px;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    gap: 30px;
+  }
 }
 
 .ui__colors + .ui__colors {
@@ -64,9 +71,13 @@
 
 .ui__color {
   flex-grow: 1;
-  height: 150px;
+  height: 120px;
   border-radius: 26px;
   background: white;
+
+  @media (min-width: 768px) {
+    height: 150px;
+  }
 }
 
 .avatar {
