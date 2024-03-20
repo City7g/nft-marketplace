@@ -23,9 +23,18 @@
 }
 
 .form-search__btn {
-  @media (min-width: 768px) {
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 8px;
+  color: white;
+}
+
+.form-search__icon {
+  font-size: 24px;
+  transition: 0.3s color ease;
+
+  &:hover {
+    color: #858584;
   }
 }

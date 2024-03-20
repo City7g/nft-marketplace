@@ -1,4 +1,5 @@
 mixin search()
   form.form-search(novalidate)&attributes(attributes)
     +input('text', 'text', 'Search your favourite NFTs')
-    button.btn.form-subscribe__btn(type='submit') Subscribe
+    button.form-search__btn(type='submit')
+      i.icon-Plus.form-search__icon

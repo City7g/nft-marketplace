@@ -3,20 +3,14 @@ input[type='email'],
 input[type='password'],
 input[type='tel'] {
   display: block;
-
   width: 100%;
-  padding: 6px 12px;
-
+  padding: 19px 20px;
   transition: outline-color 0.4s ease-in-out, outline-offset 0.4s ease-in-out;
-
   color: $black;
-
-  // border: 1px solid #dee2e6;
-  border-radius: 6px;
+  border-radius: 20px;
   outline: 2px solid transparent;
   outline-offset: 2px;
   background-color: $white;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -27,7 +21,7 @@ input[type='tel'] {
   }
 
   &:hover {
-    outline: 2px solid rgba($primary, .8);
+    outline: 2px solid rgba($primary, 0.8);
     outline-offset: 2px;
   }
 
