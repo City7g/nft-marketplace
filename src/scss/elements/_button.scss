@@ -1,40 +1,59 @@
-$primary-btn-color: $primary;
-
 .btn {
   display: inline-block;
 
-  padding: 6px 12px;
+  padding: 9px 18px;
 
   transition: 0.3s all ease;
   text-align: center;
 
   color: $white;
-  border-radius: 6px;
-  background-color: $primary-btn-color;
+  border-radius: 20px;
+  background-color: $primary;
+  border: 2px solid $primary;
 
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
 
+  @media (min-width: 768px) {
+    padding: 16px 34px;
+  }
+
   &:hover {
-    background-color: darken($primary-btn-color, 5);
+    background-color: darken($primary, 5);
+    border-color: darken($primary, 5);
+    border-radius: darken($primary, 5);
   }
 
   &:focus-visible {
     outline: none;
-    background-color: darken($primary-btn-color, 5);
-    box-shadow: 0 0 0 6px rgba($primary-btn-color, 0.25);
+    background-color: darken($primary, 5);
+    border-color: darken($primary, 5);
+    box-shadow: 0 0 0 6px rgba($primary, 0.25);
   }
 
   &:active {
-    background-color: darken($primary-btn-color, 10);
+    background-color: darken($primary, 10);
+    border-color: darken($primary, 10);
   }
 
   &:disabled {
-    background-color: rgba($primary-btn-color, 0.3);
+    color: rgba($white, 0.3);
+    background-color: rgba($primary, 0.3);
+    border-color: rgba($primary, 0.3);
   }
 
   @media (prefers-reduced-motion: reduce) {
     transition: none;
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+
+  &:disabled {
+    color: rgba($white, 0.3);
+    background-color: transparent;
+    border-color: rgba($primary, 0.3);
   }
 }

@@ -6,6 +6,30 @@
   }
 }
 
+.discover__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px 10px;
+}
+
+.discover__btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-end;
+  grid-column: 2 / -1;
+  grid-row: 1 / 3;
+}
+
+.discover__btn i {
+  color: $primary;
+  transition: 0.3s all ease;
+}
+
+.discover__btn:hover i {
+  color: $white;
+}
+
 .discover__list {
   display: grid;
   gap: 20px 30px;
@@ -54,6 +78,19 @@
 
 .nft-card__title {
   margin-bottom: 5px;
+}
+
+.nft-card__artist {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+}
+
+.nft-card__avatar {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .nft-card__info {

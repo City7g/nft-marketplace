@@ -6,8 +6,28 @@
   }
 }
 
-.creators__title {
-  margin-bottom: 10px;
+.creators__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px 10px;
+}
+
+.creators__btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-end;
+  grid-column: 2 / -1;
+  grid-row: 1 / 3;
+}
+
+.creators__btn i {
+  color: $primary;
+  transition: 0.3s all ease;
+}
+
+.creators__btn:hover i {
+  color: $white;
 }
 
 .creators__list {

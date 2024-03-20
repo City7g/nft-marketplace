@@ -35,11 +35,18 @@
 }
 
 .index-first__btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-top: 20px;
 
   @media (min-width: $xl) {
     margin-top: 40px;
   }
+}
+
+.index-first__btn i {
+  font-size: 20px;
 }
 
 .index-first__list {

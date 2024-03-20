@@ -5,7 +5,10 @@ section.collections
     .collections__list
       - for (var x = 1; x < 4; x++)
         .collection
-          +image('/img/collections/item-' + x + '-1')(class="collection__img")
-          +image('/img/collections/item-' + x + '-2')(class="collection__img")
-          +image('/img/collections/item-' + x + '-3')(class="collection__img")
-          p.title-h5.collection__more 1025+
+          .collection__images
+            +image('/img/collections/item-' + x + '-1')(class="collection__img")
+            +image('/img/collections/item-' + x + '-2')(class="collection__img")
+            +image('/img/collections/item-' + x + '-3')(class="collection__img")
+            p.title-h5.collection__more 1025+
+          p.title-h5.collection__name DSGN Animals
+          +user-card.collection__user

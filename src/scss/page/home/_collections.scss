@@ -36,7 +36,7 @@
   }
 }
 
-.collection {
+.collection__images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
@@ -67,4 +67,12 @@
 
   border-radius: 20px;
   background-color: #a259ff;
+}
+
+.collection__name {
+  margin-top: 15px;
+}
+
+.collection__user {
+  margin-top: 10px;
 }

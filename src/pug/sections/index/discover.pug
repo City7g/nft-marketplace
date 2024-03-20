@@ -1,7 +1,11 @@
 section.discover
   .container
-    h2.title-h3.discover__title Discover More NFTs
-    p.text-p2.discover__text Explore new trending NFTs
+    .discover__header
+      h2.title-h3.discover__title Discover More NFTs
+      p.text-p2.discover__text Explore new trending NFTs
+      button.btn.btn-outline.discover__btn
+        i.icon-Storefront
+        | View Rankings
 
     .discover__list
       - for (var x = 1; x < 4; x++)
@@ -10,7 +14,9 @@ section.discover
             img.nft-card__img(src=`/img/avatars/item-${x + 4}.png` alt='')
           .nft-card__content
             h4.title-h5.nft-card__title Distant Galaxy
-            p.text-p2.nft-card__text MoonDancer
+            .nft-card__artist
+              img(src="/img/avatars/item-1.png" alt="").nft-card__avatar
+              p.text-p2.nft-card__text MoonDancer
             .nft-card__info
               .nft-card__price
                 h4.text-p3.nft-card__subtitle Price
