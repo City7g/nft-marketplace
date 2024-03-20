@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('./font/Icomoon/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ArrowLeft:before {
+  content: '\e900';
+}
+.icon-ArrowRight:before {
+  content: '\e901';
+}
+.icon-Copy:before {
+  content: '\e902';
+}
+.icon-DiscordLogo:before {
+  content: '\e903';
+}
+.icon-EnvelopeSimple:before {
+  content: '\e904';
+}
+.icon-Eye:before {
+  content: '\e905';
+}
+.icon-EyeSlash:before {
+  content: '\e906';
+}
+.icon-Globe:before {
+  content: '\e907';
+}
+.icon-InstagramLogo:before {
+  content: '\e908';
+}
+.icon-List:before {
+  content: '\e909';
+}
+.icon-LockKey:before {
+  content: '\e90a';
+}
+.icon-MagnifyingGlass:before {
+  content: '\e90b';
+}
+.icon-Plus:before {
+  content: '\e90c';
+}
+.icon-Rocket:before {
+  content: '\e90d';
+}
+.icon-RocketLaunch:before {
+  content: '\e90e';
+}
+.icon-Storefront:before {
+  content: '\e90f';
+}
+.icon-TrendUp:before {
+  content: '\e910';
+}
+.icon-TwitterLogo:before {
+  content: '\e911';
+}
+.icon-User:before {
+  content: '\e912';
+}
+.icon-UserCircle:before {
+  content: '\e913';
+}
+.icon-Wallet:before {
+  content: '\e914';
+}
+.icon-YoutubeLogo:before {
+  content: '\e915';
+}

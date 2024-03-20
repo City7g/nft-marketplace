@@ -24,8 +24,7 @@ select {
 
   &:disabled {
     cursor: not-allowed;
-
-    border-color: #dee2e6;
-    background-color: #e9ecef;
+    border-color: rgba(#dee2e6, 0.5);
+    background-color: rgba(#dee2e6, 0.5);
   }
 }

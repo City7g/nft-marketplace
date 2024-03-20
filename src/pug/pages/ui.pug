@@ -1,6 +1,9 @@
 extends ../layouts/main
 
+
 block content
+  - const icomoon = ['icon-ArrowLeft', 'icon-ArrowRight', 'icon-Copy', 'icon-DiscordLogo', 'icon-EnvelopeSimple', 'icon-Eye', 'icon-EyeSlash', 'icon-Globe', 'icon-InstagramLogo', 'icon-List', 'icon-LockKey', 'icon-MagnifyingGlass', 'icon-Plus', 'icon-Rocket', 'icon-RocketLaunch', 'icon-Storefront', 'icon-TrendUp', 'icon-TwitterLogo', 'icon-User', 'icon-UserCircle', 'icon-Wallet', 'icon-YoutubeLogo']
+
   section
     .container
       .ui
@@ -24,6 +27,12 @@ block content
               p.text-p1 NFT Marketplace
               p.text-p2 NFT Marketplace
               p.text-p3 NFT Marketplace
+
+          .ui__content
+            .ui__wrap
+              h4.ui__caption Font: Space Mono
+              each icon in icomoon
+                i(class=`${icon}`)
 
           .ui__content
             .ui__wrap.ui__wrap--column
