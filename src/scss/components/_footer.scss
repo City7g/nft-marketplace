@@ -31,6 +31,17 @@
   margin-top: 20px;
 }
 
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+
+  @media (min-width: 1200px) {
+    margin-top: 25px;
+  }
+}
+
 .footer__subscribe {
   margin-top: 20px;
 }
@@ -66,4 +77,16 @@
   @media (min-width: 1200px) {
     margin-top: 30px;
   }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.footer__social {
+  font-size: 32px;
+  color: #858584;
 }
