@@ -1,0 +1,62 @@
+.content {
+  padding: 40px 0;
+}
+
+.content__title {
+  margin-bottom: 10px;
+}
+
+.content__date {
+  color: #858584;
+}
+
+.content .timer {
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+}
+
+.content__heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #858584;
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.content__detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content__detail i {
+  font-size: 32px;
+  color: #858584;
+}
+
+.content__tags {
+  margin-top: 20px;
+}
+
+.artist-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.artist-card__img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}

@@ -88,5 +88,11 @@
 
 .footer__social {
   font-size: 32px;
+  line-height: 1;
   color: #858584;
+  transition: 0.3s color ease;
+
+  &:hover {
+    color: white;
+  }
 }

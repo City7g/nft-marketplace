@@ -1,0 +1,21 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+
+.timer__title {
+  margin-bottom: 10px;
+}
+
+.timer__timer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 10px;
+}
+
+.timer__btn {
+  margin-top: 30px;
+}
