@@ -1,11 +1,3 @@
-// @font-face {
-//   font-family: 'icomoon';font-family
-//   src: url('./font/Icomoon/icomoon.woff') format('woff');src
-//   font-weight: normal;font-weight
-//   font-style: normal;font-style
-//   font-display: block;font-display
-// }
-
 [class^='icon-'],
 [class*=' icon-'] {
   font-family: 'Icomoon' !important;
@@ -16,8 +8,6 @@
   text-transform: none;
   font-size: 32px;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

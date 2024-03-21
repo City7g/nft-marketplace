@@ -1,0 +1,90 @@
+.title-h1,
+.title-h1s {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  @media (min-width: 768px) {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 67px;
+    line-height: 1.1;
+  }
+}
+
+.title-h2,
+.title-h2s {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  @media (min-width: 768px) {
+    font-size: 38px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 51px;
+  }
+}
+
+.title-h3,
+.title-h3s {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  @media (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+}
+
+.title-h4,
+.title-h4s {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.title-h5,
+.title-h5s {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.text-p1,
+.text-p1s {
+  font-size: 16px;
+  line-height: 1.6;
+
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
+}
+
+.text-p2,
+.text-p2s {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.text-p3,
+.text-p3s {
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+.title-h1s,
+.title-h2s,
+.title-h3s,
+.title-h4s,
+.title-h5s,
+.text-p1s,
+.text-p2s,
+.text-p3s {
+  font-family: 'SpaceMono';
+}
