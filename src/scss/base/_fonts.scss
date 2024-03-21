@@ -25,9 +25,17 @@
 
 .title-h2,
 .title-h2s {
-  font-size: 51px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.1;
+
+  @media (min-width: 768px) {
+    font-size: 38px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 51px;
+  }
 }
 
 .title-h3,

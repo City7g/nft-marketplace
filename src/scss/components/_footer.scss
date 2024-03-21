@@ -57,10 +57,23 @@
 }
 
 .form-subscribe__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
   @media (min-width: 768px) {
     position: absolute;
     top: 0;
     right: 0;
+  }
+}
+
+.form-subscribe__icon {
+  font-size: 20px;
+
+  @media (min-width: 768px) {
+    display: none;
   }
 }
 

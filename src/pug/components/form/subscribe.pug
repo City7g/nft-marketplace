@@ -1,4 +1,6 @@
 mixin subscribe()
   form.form-subscribe(novalidate)&attributes(attributes)
     +input('email', 'email', 'Enter your email here')
-    button.btn.form-subscribe__btn(type='submit') Subscribe
+    button.btn.form-subscribe__btn(type='submit')
+      i.icon-Eye.form-subscribe__icon
+      | Subscribe

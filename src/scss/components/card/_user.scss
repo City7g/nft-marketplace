@@ -1,0 +1,12 @@
+.artist-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.artist-card__img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}

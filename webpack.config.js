@@ -1,7 +1,7 @@
 import Dotenv from 'dotenv-webpack'
 
 export default {
-  mode: 'development',
+  mode: 'production',
   output: {
     filename: 'main.js',
   },
