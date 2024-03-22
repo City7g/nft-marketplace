@@ -16,20 +16,36 @@
 
 .highlight__wrap {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-
+  flex-direction: column;
+  justify-content: flex-end;
   height: 100%;
 
-  @media (max-width: 1199px) {
-    align-items: stretch;
-    flex-direction: column;
-    justify-content: flex-end;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 295px;
+    align-items: flex-end;
   }
+}
+
+.highlight__content {
+  @media (max-width: 767px) {
+    display: contents;
+  }
+}
+
+.highlight__user {
+  margin-bottom: 30px;
 }
 
 .highlight__title {
   margin-bottom: 30px;
+}
+
+.highlight__btn {
+  @media (max-width: 767px) {
+    order: 10;
+    margin-top: 30px;
+  }
 }
 
 .time {

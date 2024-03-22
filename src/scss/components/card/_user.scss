@@ -1,10 +1,17 @@
-.artist-card {
+.user-card {
   display: flex;
   align-items: center;
   gap: 12px;
+  width: max-content;
 }
 
-.artist-card__img {
+.user-card--black {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+
+.user-card__img {
   width: 24px;
   height: 24px;
   object-fit: cover;

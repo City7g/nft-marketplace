@@ -48,12 +48,29 @@
   }
 }
 
-.btn-outline {
+.btn--outline {
   background-color: transparent;
 
   &:disabled {
     color: rgba($white, 0.3);
     background-color: transparent;
+    border-color: rgba($primary, 0.3);
+  }
+}
+
+.btn--white {
+  background-color: $white;
+  border-color: $white;
+  color: $primary;
+
+  &:hover,
+  &:focus-visible {
+    color: $white;
+  }
+
+  &:disabled {
+    color: rgba($white, 0.3);
+    background-color: $white;
     border-color: rgba($primary, 0.3);
   }
 }
