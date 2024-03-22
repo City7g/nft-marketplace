@@ -18,6 +18,8 @@
 }
 
 .content .timer {
+  max-width: 400px;
+
   @media (max-width: 767px) {
     margin-top: 20px;
   }

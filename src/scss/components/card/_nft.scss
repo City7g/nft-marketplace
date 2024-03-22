@@ -15,7 +15,9 @@
   background-color: #2b2b2b;
 }
 
-.nft-card__image {
+.nft-card__img {
+  display: block;
+  object-fit: cover;
   aspect-ratio: 1 / 0.9;
 }
 

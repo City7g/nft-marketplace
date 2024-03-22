@@ -37,8 +37,19 @@
   }
 }
 
+.work__image {
+  @media (min-width: 767px) {
+    margin: 0 5px 20px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
 .work__img {
-  margin-bottom: 20px;
+  display: block;
 }
 
 .work__title {

@@ -1,5 +1,6 @@
 .highlight {
   height: 100vh;
+  height: 640px;
   min-height: 400px;
   padding: 60px 0;
 
@@ -42,10 +43,24 @@
 }
 
 .highlight__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
   @media (max-width: 767px) {
     order: 10;
     margin-top: 30px;
   }
+}
+
+.highlight__btn i {
+  transition: 0.3s all ease;
+  color: $primary;
+}
+
+.highlight__btn:hover i {
+  color: $white;
 }
 
 .time {
