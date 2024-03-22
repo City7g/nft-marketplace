@@ -9,7 +9,7 @@ import cleanCSS from 'gulp-clean-css'
 
 import config from './webpack.config.js'
 
-// console.log(env)
+console.log(process.env.NODE_ENV)
 
 const sass = gulpSass(nodeSass)
 browsersync.create()
@@ -39,7 +39,13 @@ const browserSync = () => {
 const html = () => {
   return gulp
     .src('./src/pug/pages/*.pug')
-    .pipe(pug())
+    .pipe(
+      pug({
+        data: {
+          env: 'development',
+        },
+      })
+    )
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream())
 }

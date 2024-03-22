@@ -18,7 +18,7 @@
 .title-h2,
 .title-h2s {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1;
 
   @media (min-width: 768px) {
@@ -33,7 +33,7 @@
 .title-h3,
 .title-h3s {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.4;
 
   @media (min-width: 1200px) {
@@ -60,10 +60,6 @@
   }
 }
 
-.title-h5s {
-  font-weight: 700;
-}
-
 .text-p1,
 .text-p1s {
   font-size: 16px;
@@ -84,6 +80,14 @@
 .text-p3s {
   font-size: 12px;
   line-height: 1.1;
+}
+
+.title-h1s,
+.title-h2s,
+.title-h3s,
+.title-h4s,
+.title-h5s {
+  font-weight: 700;
 }
 
 .title-h1s,

@@ -38,6 +38,10 @@ if (tabs.length) {
 
 const timer = document.querySelector('.timer')
 
+const formatTimerNumber = value => {
+  return value < 10 ? `0${value}` : value
+}
+
 if (timer) {
   const getTimeUntilNextDay = () => {
     const now = new Date()
@@ -59,9 +63,13 @@ if (timer) {
   const updateTimer = () => {
     const timer = getTimeUntilNextDay()
 
-    document.querySelector('.timer__hour').textContent = timer.hours
-    document.querySelector('.timer__minute').textContent = timer.minutes
-    document.querySelector('.timer__second').textContent = timer.seconds
+    const timerHour = document.querySelector('.timer__hour')
+    const timerMinute = document.querySelector('.timer__minute')
+    const timerSecond = document.querySelector('.timer__second')
+
+    timerHour.textContent = formatTimerNumber(timer.hours)
+    timerMinute.textContent = formatTimerNumber(timer.minutes)
+    timerSecond.textContent = formatTimerNumber(timer.seconds)
   }
 
   setInterval(updateTimer, 1000)
