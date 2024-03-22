@@ -1,5 +1,5 @@
 mixin nft-card(x, color)
-  .nft-card(class=`${color === 'black' && 'nft-card--black'}`)
+  a(href="/single.html").nft-card(class=`${color === 'black' && 'nft-card--black'}`)
     .nft-card__image
       img.nft-card__img(src=`/img/avatars/item-${x + 4}.png` alt='')
     .nft-card__content

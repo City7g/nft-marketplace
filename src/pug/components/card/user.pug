@@ -1,4 +1,4 @@
 mixin user-card(color)
-  .user-card(class=`${color === 'black' && 'user-card--black'}`)&attributes(attributes)
+  a(href="/artist.html").user-card(class=`${color === 'black' && 'user-card--black'}`)&attributes(attributes)
     img(src="/img/avatars/item-1.png" alt="").user-card__img
     h5.title-h5.user-card__name Orbitian 

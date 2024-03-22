@@ -68,18 +68,3 @@ if (timer) {
 
   updateTimer()
 }
-
-// window.addEventListener('load', () => {
-//   const resources = performance.getEntriesByType('resource')
-
-//   console.log(resources)
-
-//   // setInterval(() => {
-//   //   console.log(performance.now())
-//   //   console.log(performance.getEntriesByType('resource'))
-//   // }, 1000)
-
-//   resources.forEach(item => {
-//     console.log(item.initiatorType, item.name, item.encodedBodySize / 1024)
-//   })
-// })

@@ -42,6 +42,10 @@
   gap: 15px;
 }
 
+.collection__single:first-child {
+  grid-column: 1 / -1;
+}
+
 .collection__img {
   display: block;
 
@@ -50,14 +54,6 @@
   object-fit: cover;
 
   border-radius: 20px;
-
-  &:first-child {
-    grid-column: 1 / -1;
-  }
-}
-
-.collection picture:first-child {
-  grid-column: 1 / -1;
 }
 
 .collection__more {

@@ -6,9 +6,12 @@ section.collections
       - for (var x = 1; x < 4; x++)
         .collection
           .collection__images
-            +image('/img/collections/item-' + x + '-1')(class="collection__img")
-            +image('/img/collections/item-' + x + '-2')(class="collection__img")
-            +image('/img/collections/item-' + x + '-3')(class="collection__img")
-            p.title-h5.collection__more 1025+
+            a(href="/single.html").collection__single
+              +image('/img/collections/item-' + x + '-1').collection__img
+            a(href="/single.html").collection__single
+              +image('/img/collections/item-' + x + '-2').collection__img
+            a(href="/single.html").collection__single
+              +image('/img/collections/item-' + x + '-3').collection__img
+            a(href="/single.html").title-h5.collection__more 1025+
           p.title-h5.collection__name DSGN Animals
           +user-card.collection__user
