@@ -8,7 +8,8 @@ header.header
         a.header-nav__link(href='/marketplace.html') Marketplace
         a.header-nav__link(href='/ranking.html') Rankings
         a.header-nav__link(href='/form.html') Connect a wallet
-        a.header-nav__link(href='/ui.html') UI
+        if (mode === 'development')
+          a.header-nav__link(href='/ui.html') UI
       button.btn.header-btn.header__btn
         i.icon-User.header-btn__icon
         | Sign Up
