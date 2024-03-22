@@ -43,11 +43,6 @@
 }
 
 .highlight__btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-
   @media (max-width: 767px) {
     order: 10;
     margin-top: 30px;

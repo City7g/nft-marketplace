@@ -1,0 +1,11 @@
+section.single-list
+  .container
+    .single-list__wrap
+      .single-list__header
+        h3.title-h3.single-list__title More from this artist
+        a(href="/single.html").btn.btn--outline.single-list__btn
+          i.icon-ArrowRight.btn__icon
+          | Go To Artist Page 
+      .single-list__list
+        - for (var x = 1; x < 10; x++)
+          +nft-card(x)

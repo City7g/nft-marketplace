@@ -7,11 +7,11 @@
 .footer__wrap {
   display: grid;
   gap: 30px;
-  margin: 0 30px;
 
   @media (min-width: 1200px) {
     grid-template-columns: 1fr 160px 420px;
     gap: 80px;
+    margin: 0 30px;
   }
 }
 
@@ -81,11 +81,6 @@
 }
 
 .form-subscribe__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-
   @media (min-width: 768px) {
     position: absolute;
     top: 0;

@@ -29,20 +29,19 @@
 .index-first__title {
   margin-bottom: 10px;
 
-  @media (min-width: $xl) {
+  @media (min-width: 1200px) {
     margin-bottom: 20px;
   }
 }
 
 .index-first__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
   margin-top: 20px;
 
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
   @media (min-width: 1200px) {
-    display: inline-flex;
     margin-top: 30px;
   }
 }
@@ -65,7 +64,7 @@
 .index-first__info {
   padding: 22px 20px;
 
-  @media (min-width: $xl) {
+  @media (min-width: 1200px) {
     padding: 20px;
   }
 }

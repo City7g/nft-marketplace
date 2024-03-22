@@ -21,11 +21,6 @@
 }
 
 .discover__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-
   @media (min-width: 768px) {
     align-self: flex-end;
     grid-column: 2 / -1;

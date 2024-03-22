@@ -1,19 +1,18 @@
 .btn {
-  display: inline-block;
-
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   padding: 9px 18px;
-
   transition: 0.3s all ease;
   text-align: center;
-
   color: $white;
   border-radius: 20px;
   background-color: $primary;
   border: 2px solid $primary;
-
   font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 600;
+  line-height: 1.4;
 
   @media (min-width: 768px) {
     padding: 16px 34px;
@@ -48,6 +47,11 @@
   }
 }
 
+.btn__icon {
+  font-size: 20px;
+  transition: 0.3s all ease;
+}
+
 .btn--outline {
   background-color: transparent;
 
@@ -56,6 +60,14 @@
     background-color: transparent;
     border-color: rgba($primary, 0.3);
   }
+}
+
+.btn--outline .btn__icon {
+  color: $primary;
+}
+
+.btn--outline:hover .btn__icon {
+  color: $white;
 }
 
 .btn--white {

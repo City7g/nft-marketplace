@@ -14,7 +14,7 @@ $container-max-widths: (
   padding-left: 20px;
 }
 
-@media (min-width: $xl) {
+@media (min-width: 1200px) {
   .container {
     max-width: 1090px;
   }
