@@ -6,6 +6,10 @@
   }
 }
 
+.collections__text {
+  margin-top: 10px;
+}
+
 .collections__list {
   margin-top: 40px;
 
@@ -40,6 +44,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+}
+
+.collection__single,
+.collection__more {
+  transition: 0.3s all ease;
+
+  &:hover {
+    transform: scale(0.95);
+  }
 }
 
 .collection__single:first-child {

@@ -1,8 +1,12 @@
 .creator {
   padding: 20px;
-
   border-radius: 20px;
   background-color: #3b3b3b;
+  transition: 0.3s all ease;
+
+  &:hover {
+    transform: scale(0.95);
+  }
 
   @media (max-width: 1199px) {
     display: grid;
@@ -67,10 +71,17 @@
   margin-bottom: 5px;
 }
 
-.creator__total {
+.creator__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+}
+
+.creator__text {
+  white-space: nowrap;
   color: #858584;
 }
 
-.creator__total span {
-  color: $white;
+.creator__price {
+  white-space: nowrap;
 }

@@ -1,7 +1,7 @@
 .title-h1,
 .title-h1s {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.4;
 
   @media (min-width: 768px) {
@@ -45,15 +45,23 @@
 .title-h4,
 .title-h4s {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.4;
 }
 
 .title-h5,
 .title-h5s {
-  font-size: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.title-h5s {
   font-weight: 700;
-  line-height: 1.6;
 }
 
 .text-p1,

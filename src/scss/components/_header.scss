@@ -1,11 +1,9 @@
 .header {
   z-index: 10000;
-
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-
   background-color: $black;
 }
 
@@ -13,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   height: 54px;
   padding: 0 20px;
 
@@ -23,26 +20,35 @@
   }
 }
 
+.header__logo {
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: 5px;
+
+  @media (min-width: 1200px) {
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+  }
+}
+
 .header__mobile {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 10px;
 
   @media (max-width: 1199px) {
     position: fixed;
     top: 54px;
     right: 0;
     bottom: 0;
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
-
     width: 100%;
     max-width: 300px;
     padding: 10px 30px 20px;
-
     transition: 0.3s transform ease;
     transform: scaleX(0);
     transform-origin: right;
@@ -60,6 +66,8 @@
 }
 
 .header__burger {
+  margin-right: -12px;
+
   @media (min-width: 1200px) {
     display: none;
   }
@@ -67,7 +75,7 @@
 
 .header-nav {
   display: flex;
-  gap: 20px 50px;
+  gap: 0 10px;
 
   @media (max-width: 1199px) {
     flex-direction: column;
@@ -75,9 +83,19 @@
 }
 
 .header-nav__link {
+  padding: 12px 10px;
   transition: 0.3s color ease;
-
+  font-weight: 600;
   color: $white;
+
+  @media (max-width: 1199px) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 12px 20px;
+  }
 
   &:hover {
     color: rgba($white, 0.4);

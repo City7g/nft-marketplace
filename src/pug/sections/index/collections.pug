@@ -1,7 +1,7 @@
 section.collections
   .container
     h2.title-h3.collections__title Trending Collection
-    p.text-p1.collections__text Checkout our weekly updated trending collection.
+    p.text-p1.collections__text Checkout Our Weekly Updated Trending Collection.
     .collections__list
       - for (var x = 1; x < 4; x++)
         .collection
@@ -12,6 +12,6 @@ section.collections
               +image('/img/collections/item-' + x + '-2').collection__img
             a(href="/single.html").collection__single
               +image('/img/collections/item-' + x + '-3').collection__img
-            a(href="/single.html").title-h5.collection__more 1025+
+            a(href="/single.html").title-h5s.collection__more 1025+
           p.title-h5.collection__name DSGN Animals
           +user-card.collection__user
