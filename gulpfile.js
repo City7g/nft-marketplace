@@ -4,8 +4,12 @@ import nodeSass from 'sass'
 import pug from 'gulp-pug'
 import webpack from 'webpack-stream'
 import browsersync from 'browser-sync'
+import gcmq from 'gulp-group-css-media-queries'
+import cleanCSS from 'gulp-clean-css'
 
 import config from './webpack.config.js'
+
+// console.log(env)
 
 const sass = gulpSass(nodeSass)
 browsersync.create()
@@ -33,21 +37,6 @@ const browserSync = () => {
 }
 
 const html = () => {
-  // return gulp
-  //   .src('./src/njk/**/*.njk')
-  //   .pipe(
-  //     nunjucksRender({
-  //       path: [
-  //         'src/njk/layout/',
-  //         'src/njk/components/',
-  //         'src/njk/sections/',
-  //         'src/njk/ui/',
-  //         'src/njk/mixins/',
-  //       ],
-  //     })
-  //   )
-  //   .pipe(gulp.dest('./dist'))
-  //   .pipe(browsersync.stream())
   return gulp
     .src('./src/pug/pages/*.pug')
     .pipe(pug())
@@ -59,6 +48,8 @@ const style = () => {
   return gulp
     .src('./src/scss/main.scss')
     .pipe(sass())
+    .pipe(gcmq())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream())
 }
