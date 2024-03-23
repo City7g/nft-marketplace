@@ -1,11 +1,11 @@
 mixin nft-card(x, color)
   a(href="/single.html").nft-card(class=`${color === 'black' && 'nft-card--black'}`)
     .nft-card__image
-      img.nft-card__img(src=`/img/avatars/item-${x + 4}.png` alt='')
+      +image(`/img/avatars/item-${x}`).nft-card__img
     .nft-card__content
       h4.title-h5.nft-card__title Distant Galaxy
       .nft-card__artist
-        img(src="/img/avatars/item-1.png" alt="").nft-card__avatar
+        +image(`/img/avatars/item-${x}`).nft-card__avatar
         p.text-p2s.nft-card__text MoonDancer
       .nft-card__info
         .nft-card__price

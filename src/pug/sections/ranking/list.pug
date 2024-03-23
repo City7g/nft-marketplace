@@ -17,7 +17,7 @@ section.ranking-list
         - for (var x = 1; x < 21; x++)
           a(href="/artist.html").table__row
             .table__index= x
-            img(src=`/img/avatars/item-${x}.png`, alt="").table__avatar
+            +image(`/img/avatars/item-${x}-60x60`).table__avatar
             .table__name Ruben Carder
             .table__percent +1.41%
             .table__sold 602

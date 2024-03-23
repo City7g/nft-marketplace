@@ -3,9 +3,13 @@
   height: 640px;
   min-height: 400px;
   padding: 60px 0;
-
   background-image: linear-gradient(to bottom, transparent, $primary),
-    url('/img/highlight.png');
+    image-set(
+      url('/img/highlight-bg.avif') type('image/avif'),
+      url('/img/highlight-bg.webp') type('image/webp'),
+      url('/img/highlight-bg.jpeg')
+    );
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

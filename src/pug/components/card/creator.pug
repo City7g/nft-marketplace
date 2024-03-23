@@ -2,7 +2,7 @@ mixin nft-creator(x)
   a(href="/artist.html").creator
     .creator__image
       p.text-p2.creator__number= x
-      img.creator__img(src=`/img/avatars/item-${x}.png` alt='')
+      +image(`/img/avatars/item-${x}`).creator__img
     .creator__content
       h4.title-h5.creator__name Keepitreal
       p.text-p2.creator__info
