@@ -8,7 +8,8 @@
     "build": "NODE_ENV=production gulp build",
     "stylelint": "stylelint \"./src/scss/**/*.scss\" --fix",
     "test": "stylelint \"./src/scss/**/*.scss\" --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pre-commit": "stylelint"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "gulp-sass": "^5.1.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
+    "pre-commit": "^1.2.2",
     "sass": "^1.58.3",
     "stylelint": "^16.0.0",
     "stylelint-order": "^6.0.4",
