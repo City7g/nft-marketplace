@@ -4,8 +4,8 @@ a {
 
 a::after {
   content: '';
-  position: absolute;
   inset: 0;
+  position: absolute;
   display: block;
   border-radius: inherit;
   background: repeating-linear-gradient(
