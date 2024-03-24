@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development gulp",
     "build": "NODE_ENV=production gulp build",
-    "stylelint": "stylelint \"./src/scss/**/*.scss\" --fix"
+    "stylelint": "stylelint \"./src/scss/**/*.scss\""
   },
   "keywords": [],
   "author": "",
@@ -26,13 +26,24 @@
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-stylelint": "^13.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "sass": "^1.58.3",
-    "stylelint": "^13.0.0",
+    "stylelint": "^16.0.0",
     "stylelint-order": "^6.0.4",
     "stylelint-scss": "^6.2.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack-stream": "^7.0.0"
+  },
+  "lint-staged": {
+    "*.scss": [
+      "npm run stylelint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
