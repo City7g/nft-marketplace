@@ -8,7 +8,6 @@
     "build": "NODE_ENV=production gulp build",
     "stylelint": "stylelint \"./src/scss/**/*.scss\" --fix",
     "test": "stylelint \"./src/scss/**/*.scss\" --fix",
-    "prepare": "husky",
     "pre-commit": "stylelint"
   },
   "keywords": [],
