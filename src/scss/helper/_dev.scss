@@ -52,12 +52,13 @@ p::after {
   bottom: 0;
   right: 0;
   display: block;
+  border-radius: inherit;
   background: repeating-linear-gradient(
     45deg,
     rgba(0, 255, 0, 0.4) 0px,
     rgba(0, 255, 0, 0.4) 5px,
     rgba(0, 255, 0, 0.2) 5px,
-    rgba(0, 255, 0, 0.2) 10px border-radius: inherit;
+    rgba(0, 255, 0, 0.2) 10px
   );
   background-color: blue;
 }

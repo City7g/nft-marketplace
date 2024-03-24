@@ -86,3 +86,11 @@
     background-color: $white;
   }
 }
+
+.btn--white .btn__icon {
+  color: $primary;
+}
+
+.btn--white:hover .btn__icon {
+  color: $black;
+}

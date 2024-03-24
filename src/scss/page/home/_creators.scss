@@ -33,15 +33,6 @@
   }
 }
 
-.creators__btn i {
-  color: $primary;
-  transition: 0.3s all ease;
-}
-
-.creators__btn:hover i {
-  color: $white;
-}
-
 .creators__list {
   display: grid;
   gap: 20px;

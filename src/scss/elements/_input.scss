@@ -38,6 +38,10 @@ input[type='tel'] {
   @media (min-width: 768px) {
     padding: 18px 20px;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 }
 
 .input.error .input__error {

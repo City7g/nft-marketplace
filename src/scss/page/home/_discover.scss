@@ -33,15 +33,6 @@
   }
 }
 
-.discover__btn i {
-  color: $primary;
-  transition: 0.3s all ease;
-}
-
-.discover__btn:hover i {
-  color: $white;
-}
-
 .discover__list {
   display: grid;
   gap: 20px 30px;
