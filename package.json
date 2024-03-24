@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_ENV=development gulp",
     "build": "NODE_ENV=production gulp build",
-    "stylelint": "stylelint \"./src/scss/**/*.scss\""
+    "stylelint": "stylelint \"./src/scss/**/*.scss\" --fix"
   },
   "keywords": [],
   "author": "",

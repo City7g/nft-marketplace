@@ -3,11 +3,11 @@ a {
 }
 
 a::after {
-  content: '';
-  position: absolute;
   inset: 0;
+  position: absolute;
   display: block;
   border-radius: inherit;
+  outline: 2px solid red;
   background: repeating-linear-gradient(
     45deg,
     rgb(255 0 0 / 40%) 0,
@@ -16,7 +16,7 @@ a::after {
     rgb(255 0 0 / 20%) 10px
   );
   background-color: blue;
-  outline: 2px solid red;
+  content: '';
 }
 
 button {
@@ -24,11 +24,11 @@ button {
 }
 
 button::after {
-  content: '';
   position: absolute;
   inset: 0;
   display: block;
   border-radius: inherit;
+  outline: 2px solid blue;
   background: repeating-linear-gradient(
     45deg,
     rgb(0 0 255 / 40%) 0,
@@ -37,61 +37,60 @@ button::after {
     rgb(0 0 255 / 20%) 10px
   );
   background-color: blue;
-  outline: 2px solid blue;
+  content: '';
 }
 
-// p {
-//   position: relative;positionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
-// }
+p {
+  position: relative;
+}
 
-// p::after {
-//   position: absolute;positionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
-//   top: 0;toptoptoptoptoptoptoptoptoptoptoptoptoptop
-//   left: 0;leftleftleftleftleftleftleftleftleftleftleftleftleftleft
-//   right: 0;rightrightrightrightrightrightrightrightrightrightrightrightrightright
-//   bottom: 0;bottombottombottombottombottombottombottombottombottombottombottombottombottombottom
-//   content: '';contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
-//   display: block;displaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
-//   background-color: blue;background-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-color
-//   background: repeating-linear-gradient(
-//     45deg,
-//     rgba(0, 255, 0, 0.4) 0px,
-//     rgba(0, 255, 0, 0.4) 5px,
-//     rgba(0, 255, 0, 0.2) 5px,
-//     rgba(0, 255, 0, 0.2) 10px
-//   );backgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackground
-//   border-radius: inherit;border-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radius
-// }
+p::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  background-color: blue;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 255, 0, 0.4) 0px,
+    rgba(0, 255, 0, 0.4) 5px,
+    rgba(0, 255, 0, 0.2) 5px,
+    rgba(0, 255, 0, 0.2) 10px border-radius: inherit;
+  );
+}
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   position: relative;positionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
 
-// h1::after,
-// h2::after,
-// h3::after,
-// h4::after,
-// h5::after,
-// h6::after {
-//   position: absolute;positionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
-//   top: 0;toptoptoptoptoptoptoptoptoptoptoptoptoptop
-//   left: 0;leftleftleftleftleftleftleftleftleftleftleftleftleftleft
-//   right: 0;rightrightrightrightrightrightrightrightrightrightrightrightrightright
-//   bottom: 0;bottombottombottombottombottombottombottombottombottombottombottombottombottombottom
-//   content: '';contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
-//   display: block;displaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
-//   background-color: blue;background-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-color
-//   background: repeating-linear-gradient(
-//     45deg,
-//     rgba(0, 255, 255, 0.4) 0px,
-//     rgba(0, 255, 255, 0.4) 5px,
-//     rgba(0, 255, 255, 0.2) 5px,
-//     rgba(0, 255, 255, 0.2) 10px
-//   );backgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackground
-//   border-radius: inherit;border-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radius
-// }
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  background-color: blue;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 255, 255, 0.4) 0px,
+    rgba(0, 255, 255, 0.4) 5px,
+    rgba(0, 255, 255, 0.2) 5px,
+    rgba(0, 255, 255, 0.2) 10px
+  );
+  border-radius: inherit;
+}
