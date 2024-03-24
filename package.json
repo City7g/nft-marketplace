@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "NODE_ENV=development gulp",
     "build": "NODE_ENV=production gulp build",
-    "stylelint": "stylelint \"./src/scss/**/*.scss\" --fix"
+    "stylelint": "stylelint \"./src/scss/**/*.scss\" --fix",
+    "test": "stylelint \"./src/scss/**/*.scss\" --fix",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -43,7 +45,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run stylelint"
     }
   }
 }
