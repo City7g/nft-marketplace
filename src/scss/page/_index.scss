@@ -1,14 +1,6 @@
 @import './home';
 @import './market';
 @import './ranking';
-
-.asd {
-  display: flex;
-  color: red;
-  font-size: 12px;
-
-  @import './form';
-}
-
+@import './form';
 @import './artist';
 @import './single';
