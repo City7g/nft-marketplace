@@ -43,6 +43,7 @@ const html = () => {
       pug({
         data: {
           mode: process.env.NODE_ENV,
+          image: 'format',
         },
       })
     )
