@@ -4,9 +4,14 @@
     "stylelint-order"
   ],
   "rules": {
-    "media-feature-name-disallowed-list": [
-      "/^min-/",
-      "/^max-/"
+    "media-feature-name-no-unknown": [
+      true,
+      {
+        "ignoreMediaFeatureNames": [
+          "/^min-/",
+          "/^max-/"
+        ]
+      }
     ],
     "declaration-empty-line-before": null,
     "order/properties-order": [
