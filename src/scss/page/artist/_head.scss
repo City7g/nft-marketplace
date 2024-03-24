@@ -2,15 +2,12 @@
   position: relative;
 
   &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    pointer-events: none;
     content: '';
+    position: absolute;
+    inset: 0;
+    display: block;
     background-image: linear-gradient(to top, #9747ff, transparent);
+    pointer-events: none;
   }
 }
 

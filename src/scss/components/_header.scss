@@ -1,16 +1,16 @@
 .header {
-  z-index: 10000;
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
+  z-index: 10000;
   background-color: $black;
 }
 
 .header__wrap {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   height: 54px;
   padding: 0 20px;
 
@@ -21,13 +21,13 @@
 }
 
 .header__logo {
-  margin-left: -5px;
   margin-right: -5px;
+  margin-left: -5px;
   padding: 5px;
 
   @media (min-width: 1200px) {
-    margin-left: -10px;
     margin-right: -10px;
+    margin-left: -10px;
     padding: 10px;
   }
 }
@@ -46,20 +46,20 @@
   @media (max-width: 1199px) {
     position: fixed;
     top: 54px;
-    right: 0;
     bottom: 0;
+    right: 0;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     max-width: 300px;
     padding: 10px 30px 20px;
-    transition: 0.3s transform ease;
-    transform: scaleX(0);
-    transform-origin: right;
 
     background-color: $black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s transform ease;
 
     @media (prefers-reduced-motion: reduce) {
       transition: none;
@@ -90,18 +90,9 @@
 
 .header-nav__link {
   padding: 12px 10px;
-  transition: 0.3s color ease;
-  font-weight: 600;
   color: $white;
-
-  @media (max-width: 1199px) {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-
-  @media (min-width: 1200px) {
-    padding: 12px 20px;
-  }
+  font-weight: 600;
+  transition: 0.3s color ease;
 
   &:hover {
     color: rgba($white, 0.4);
@@ -111,6 +102,15 @@
     border-radius: 3px;
     outline: 1px solid white;
     outline-offset: 3px;
+  }
+
+  @media (max-width: 1199px) {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 12px 20px;
   }
 }
 
@@ -131,7 +131,7 @@
 }
 
 .header-logo__text {
-  white-space: nowrap;
   color: $white;
   font-weight: 700;
+  white-space: nowrap;
 }

@@ -3,69 +3,64 @@ a {
 }
 
 a::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   content: '';
+  position: absolute;
+  inset: 0;
   display: block;
-  background-color: blue;
+  border-radius: inherit;
   background: repeating-linear-gradient(
     45deg,
-    rgba(255, 0, 0, 0.4) 0px,
-    rgba(255, 0, 0, 0.4) 5px,
-    rgba(255, 0, 0, 0.2) 5px,
-    rgba(255, 0, 0, 0.2) 10px
+    rgb(255 0 0 / 40%) 0,
+    rgb(255 0 0 / 40%) 5px,
+    rgb(255 0 0 / 20%) 5px,
+    rgb(255 0 0 / 20%) 10px
   );
+  background-color: blue;
   outline: 2px solid red;
-  border-radius: inherit;
 }
+
 button {
   position: relative;
 }
 
 button::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   content: '';
+  position: absolute;
+  inset: 0;
   display: block;
-  background-color: blue;
+  border-radius: inherit;
   background: repeating-linear-gradient(
     45deg,
-    rgba(0, 0, 255, 0.4) 0px,
-    rgba(0, 0, 255, 0.4) 5px,
-    rgba(0, 0, 255, 0.2) 5px,
-    rgba(0, 0, 255, 0.2) 10px
+    rgb(0 0 255 / 40%) 0,
+    rgb(0 0 255 / 40%) 5px,
+    rgb(0 0 255 / 20%) 5px,
+    rgb(0 0 255 / 20%) 10px
   );
+  background-color: blue;
   outline: 2px solid blue;
-  border-radius: inherit;
 }
 
 // p {
-//   position: relative;positionpositionpositionpositionpositionpositionpositionposition
+//   position: relative;positionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
 // }
 
 // p::after {
-//   position: absolute;positionpositionpositionpositionpositionpositionpositionposition
-//   top: 0;toptoptoptoptoptoptoptop
-//   left: 0;leftleftleftleftleftleftleftleft
-//   right: 0;rightrightrightrightrightrightrightright
-//   bottom: 0;bottombottombottombottombottombottombottombottom
-//   content: '';contentcontentcontentcontentcontentcontentcontentcontent
-//   display: block;displaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
-//   background-color: blue;background-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-color
+//   position: absolute;positionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
+//   top: 0;toptoptoptoptoptoptoptoptoptoptoptoptoptop
+//   left: 0;leftleftleftleftleftleftleftleftleftleftleftleftleftleft
+//   right: 0;rightrightrightrightrightrightrightrightrightrightrightrightrightright
+//   bottom: 0;bottombottombottombottombottombottombottombottombottombottombottombottombottombottom
+//   content: '';contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
+//   display: block;displaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
+//   background-color: blue;background-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-color
 //   background: repeating-linear-gradient(
 //     45deg,
 //     rgba(0, 255, 0, 0.4) 0px,
 //     rgba(0, 255, 0, 0.4) 5px,
 //     rgba(0, 255, 0, 0.2) 5px,
 //     rgba(0, 255, 0, 0.2) 10px
-//   );backgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackground
-//   border-radius: inherit;border-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radius
+//   );backgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackground
+//   border-radius: inherit;border-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radius
 // }
 
 // h1,
@@ -74,7 +69,7 @@ button::after {
 // h4,
 // h5,
 // h6 {
-//   position: relative;positionpositionpositionpositionpositionpositionpositionposition
+//   position: relative;positionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
 // }
 
 // h1::after,
@@ -83,20 +78,20 @@ button::after {
 // h4::after,
 // h5::after,
 // h6::after {
-//   position: absolute;positionpositionpositionpositionpositionpositionpositionposition
-//   top: 0;toptoptoptoptoptoptoptop
-//   left: 0;leftleftleftleftleftleftleftleft
-//   right: 0;rightrightrightrightrightrightrightright
-//   bottom: 0;bottombottombottombottombottombottombottombottom
-//   content: '';contentcontentcontentcontentcontentcontentcontentcontent
-//   display: block;displaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
-//   background-color: blue;background-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-color
+//   position: absolute;positionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionpositionposition
+//   top: 0;toptoptoptoptoptoptoptoptoptoptoptoptoptop
+//   left: 0;leftleftleftleftleftleftleftleftleftleftleftleftleftleft
+//   right: 0;rightrightrightrightrightrightrightrightrightrightrightrightrightright
+//   bottom: 0;bottombottombottombottombottombottombottombottombottombottombottombottombottombottom
+//   content: '';contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
+//   display: block;displaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplaydisplay
+//   background-color: blue;background-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-colorbackground-color
 //   background: repeating-linear-gradient(
 //     45deg,
 //     rgba(0, 255, 255, 0.4) 0px,
 //     rgba(0, 255, 255, 0.4) 5px,
 //     rgba(0, 255, 255, 0.2) 5px,
 //     rgba(0, 255, 255, 0.2) 10px
-//   );backgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackground
-//   border-radius: inherit;border-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radius
+//   );backgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackgroundbackground
+//   border-radius: inherit;border-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radiusborder-radius
 // }

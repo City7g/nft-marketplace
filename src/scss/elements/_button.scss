@@ -4,42 +4,42 @@
   align-items: center;
   gap: 12px;
   padding: 9px 18px;
-  transition: 0.3s all ease;
-  text-align: center;
   color: $white;
-  border-radius: 20px;
-  background-color: $primary;
-  border: 2px solid $primary;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
-
-  @media (min-width: 768px) {
-    padding: 16px 34px;
-  }
+  text-align: center;
+  border: 2px solid $primary;
+  border-radius: 20px;
+  background-color: $primary;
+  transition: 0.3s all ease;
 
   &:hover {
-    background-color: darken($primary, 5);
     border-color: darken($primary, 5);
     border-radius: darken($primary, 5);
+    background-color: darken($primary, 5);
   }
 
   &:focus-visible {
-    outline: none;
-    background-color: darken($primary, 5);
     border-color: darken($primary, 5);
+    background-color: darken($primary, 5);
+    outline: none;
     box-shadow: 0 0 0 6px rgba($primary, 0.25);
   }
 
   &:active {
-    background-color: darken($primary, 10);
     border-color: darken($primary, 10);
+    background-color: darken($primary, 10);
   }
 
   &:disabled {
     color: rgba($white, 0.3);
-    background-color: rgba($primary, 0.3);
     border-color: rgba($primary, 0.3);
+    background-color: rgba($primary, 0.3);
+  }
+
+  @media (min-width: 768px) {
+    padding: 16px 34px;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -57,8 +57,8 @@
 
   &:disabled {
     color: rgba($white, 0.3);
-    background-color: transparent;
     border-color: rgba($primary, 0.3);
+    background-color: transparent;
   }
 }
 
@@ -71,9 +71,9 @@
 }
 
 .btn--white {
-  background-color: $white;
-  border-color: $white;
   color: $black;
+  border-color: $white;
+  background-color: $white;
 
   &:hover,
   &:focus-visible {
@@ -82,7 +82,7 @@
 
   &:disabled {
     color: rgba($white, 0.3);
-    background-color: $white;
     border-color: rgba($primary, 0.3);
+    background-color: $white;
   }
 }

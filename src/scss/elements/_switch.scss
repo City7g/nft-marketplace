@@ -8,10 +8,10 @@ input[role='switch'] {
     width: 12px;
     height: 12px;
 
-    transform: translate(calc(-50% - 8px), -50%);
-
     border-radius: 50%;
     background: #dfdfdf;
+
+    transform: translate(calc(-50% - 8px), -50%);
   }
 
   &:checked {
@@ -19,9 +19,9 @@ input[role='switch'] {
   }
 
   &:checked::after {
-    transform: translate(calc(-50% + 8px), -50%);
 
     background: white;
+    transform: translate(calc(-50% + 8px), -50%);
   }
 
   &:disabled::after {

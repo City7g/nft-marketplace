@@ -4,6 +4,9 @@ select {
   width: 100%;
   padding: 6px 36px 6px 12px;
 
+  font-size: 16px;
+  line-height: 1.5;
+
   border: 1px solid #dee2e6;
   border-radius: 6px;
   background-color: #fff;
@@ -11,9 +14,6 @@ select {
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 16px 12px;
-
-  font-size: 16px;
-  line-height: 1.5;
   appearance: none;
 
   &:focus-visible {
@@ -23,8 +23,8 @@ select {
   }
 
   &:disabled {
-    cursor: not-allowed;
     border-color: rgba(#dee2e6, 0.5);
     background-color: rgba(#dee2e6, 0.5);
+    cursor: not-allowed;
   }
 }

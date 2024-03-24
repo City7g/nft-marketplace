@@ -16,9 +16,9 @@
 }
 
 .footer__logo {
+  width: max-content;
   margin: -10px -10px 10px;
   padding: 10px;
-  width: max-content;
 
   @media (min-width: 1200px) {
     margin-bottom: 20px;
@@ -26,8 +26,8 @@
 }
 
 .footer__title {
-  color: $white;
   margin-bottom: 20px;
+  color: $white;
 
   @media (min-width: 1200px) {
     margin-bottom: 25px;
@@ -50,19 +50,19 @@
 }
 
 .footer__link {
-  margin-left: -5px;
   margin-right: -5px;
+  margin-left: -5px;
   padding: 5px;
   transition: 0.3s all ease;
 
-  @media (min-width: 1200px) {
-    margin-left: -10px;
-    margin-right: -10px;
-    padding: 10px;
-  }
-
   &:hover {
     color: $white;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 10px;
   }
 }
 

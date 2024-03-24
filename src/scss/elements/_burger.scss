@@ -21,10 +21,10 @@ $offset: 5;
     width: 20px;
     height: 2px;
 
-    transition: 0.3s all ease;
-
     border-radius: 1px;
     background-color: $white;
+
+    transition: 0.3s all ease;
 
     &:nth-child(1) {
       transform: translate(-50%, calc(-50% - #{$offset}px));

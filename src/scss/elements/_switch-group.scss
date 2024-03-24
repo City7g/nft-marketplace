@@ -1,5 +1,6 @@
 .switch-group {
   display: flex;
+  gap: 4px;
 
   width: max-content;
   margin: 100px auto;
@@ -8,37 +9,36 @@
   border-radius: 4px;
   background-color: #f8f9fa;
   box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-  gap: 4px;
 
   & > legend {
-    visibility: hidden;
     block-size: 0;
+    visibility: hidden;
   }
 }
 
 .group-switch {
   display: grid;
+  place-items: center;
 
   width: 32px;
   height: 32px;
 
-  cursor: pointer;
-
   border-radius: 4px;
   background-color: transparent;
-  place-items: center;
+
+  cursor: pointer;
 
   & > * {
+    grid-area: 1/1;
     width: 100%;
     height: 100%;
     padding: 4px;
 
-    transition: .3s ease;
-    transition-property: background-color, color;
-
     color: #495057;
     border-radius: 4px;
-    grid-area: 1/1;
+
+    transition: .3s ease;
+    transition-property: background-color, color;
   }
 
   & > label,
@@ -55,8 +55,8 @@
   &:hover,
   & > input:checked ~ svg {
     color: #4263eb;
-    fill: currentcolor;
 
     background-color: #e9ecef;
+    fill: currentcolor;
   }
 }

@@ -1,11 +1,12 @@
 import gulp from 'gulp'
 import gulpSass from 'gulp-sass'
-import nodeSass from 'sass'
+import * as nodeSass from 'sass'
 import pug from 'gulp-pug'
 import webpack from 'webpack-stream'
 import browsersync from 'browser-sync'
 import gcmq from 'gulp-group-css-media-queries'
 import cleanCSS from 'gulp-clean-css'
+import gulpStylelint from 'gulp-stylelint'
 
 import config from './webpack.config.js'
 
@@ -54,6 +55,11 @@ const html = () => {
 const style = () => {
   return gulp
     .src('./src/scss/main.scss')
+    .pipe(
+      gulpStylelint({
+        reporters: [{ formatter: 'string', console: true }],
+      })
+    )
     .pipe(sass())
     .pipe(gcmq())
     .pipe(cleanCSS())

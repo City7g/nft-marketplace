@@ -8,13 +8,13 @@ body {
 
   min-height: 100vh;
   padding-top: 54px;
-  background-color: $black;
 
   color: $white;
 
   font-family: WorkSans;
   font-size: 16px;
   line-height: 1.6;
+  background-color: $black;
 
   @media (min-width: 1200px) {
     padding-top: 100px;
@@ -26,6 +26,6 @@ main {
 }
 
 ::selection {
-  background-color: $white;
   color: $black;
+  background-color: $white;
 }
