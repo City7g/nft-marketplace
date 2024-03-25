@@ -18,18 +18,18 @@
 }
 
 .tabs__item.active {
-  border-bottom-color: #858584;
+  border-bottom-color: $text;
 }
 
 .tabs__item {
-  color: #858584;
+  color: $text;
   transition: 0.3s color ease;
 }
 
 .tabs__count {
   padding: 5px 10px;
-  border-radius: 20px;
-  background-color: #3b3b3b;
+  border-radius: $radius;
+  background-color: $bg;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   @media (max-width: 767px) {
@@ -43,7 +43,7 @@
 }
 
 .tabs__item.active .tabs__count {
-  background-color: #858584;
+  background-color: $text;
 }
 
 .tabs__title-desktop {

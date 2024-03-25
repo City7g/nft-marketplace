@@ -9,7 +9,7 @@ input[type='tel'] {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  border-radius: 20px;
+  border-radius: $radius;
   background-color: $white;
   outline: 2px solid transparent;
   outline-offset: 2px;

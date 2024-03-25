@@ -15,7 +15,7 @@ a::after {
     rgb(255 0 0 / 20%) 5px,
     rgb(255 0 0 / 20%) 10px
   );
-  background-color: blue;
+  background-color: rgba(red, 0.3);
   outline: 2px solid red;
 }
 
@@ -36,7 +36,7 @@ button::after {
     rgb(0 0 255 / 20%) 5px,
     rgb(0 0 255 / 20%) 10px
   );
-  background-color: blue;
+  background-color: rgba(blue, 0.3);
   outline: 2px solid blue;
 }
 
@@ -60,7 +60,8 @@ p::after {
     rgba(0, 255, 0, 0.2) 5px,
     rgba(0, 255, 0, 0.2) 10px
   );
-  background-color: blue;
+  background-color: rgba(green, 0.3);
+  outline: 2px solid green;
 }
 
 h1,
@@ -93,5 +94,6 @@ h6::after {
     rgba(0, 255, 255, 0.2) 5px,
     rgba(0, 255, 255, 0.2) 10px
   );
-  background-color: blue;
+  background-color: rgba(yellow, 0.3);
+  outline: 2px solid yellow;
 }

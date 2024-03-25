@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   padding: 30px;
-  border-radius: 20px;
-  background-color: #3b3b3b;
+  border-radius: $radius;
+  background-color: $bg;
 }
 
 .timer--filter {

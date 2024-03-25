@@ -40,10 +40,10 @@
 .table__header {
   margin-bottom: 20px;
   padding: 11px 9px;
-  color: #858584;
-  border: 1px solid #3b3b3b;
-  border-radius: 20px;
-  background-color: #2b2b2b;
+  color: $text;
+  border: 1px solid $bg;
+  border-radius: $radius;
+  background-color: $black;
 
   @media (min-width: 1200px) {
     padding: 12px 20px;
@@ -56,12 +56,12 @@
 
 .table__row {
   padding: 12px 10px;
-  border-radius: 20px;
-  background-color: #3b3b3b;
+  border-radius: $radius;
+  background-color: $bg;
   transition: 0.3s all ease;
 
   &:hover {
-    transform: scale(0.95);
+    transform: scale($link-scale);
   }
 
   @media (min-width: 768px) {

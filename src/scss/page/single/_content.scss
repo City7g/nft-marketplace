@@ -14,7 +14,7 @@
 }
 
 .content__date {
-  color: #858584;
+  color: $text;
 }
 
 .content__timer {
@@ -35,7 +35,7 @@
 .content__heading {
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #858584;
+  color: $text;
 
   @media (min-width: 768px) {
     margin-top: 30px;
@@ -56,7 +56,7 @@
 }
 
 .content__detail i {
-  color: #858584;
+  color: $text;
 }
 
 .content__tags {

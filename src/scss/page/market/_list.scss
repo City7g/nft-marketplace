@@ -1,12 +1,12 @@
 .market-list {
   padding-top: 10px;
-  border-top: 1px solid #3b3b3b;
+  border-top: 1px solid $bg;
 }
 
 .market-list__content {
   margin-bottom: 2px;
   padding: 40px 0;
-  background-color: #3b3b3b;
+  background-color: $bg;
 
   @media (min-width: 768px) {
     padding: 60px 0;

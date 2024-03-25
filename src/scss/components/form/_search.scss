@@ -4,11 +4,11 @@
 
 .form-search input {
   color: white;
-  border: 1px solid #3b3b3b;
+  border: 1px solid $bg;
   background-color: transparent;
 
   &:placeholder {
-    color: #858584;
+    color: $text;
   }
 }
 
@@ -40,6 +40,6 @@
   transition: 0.3s color ease;
 
   &:hover {
-    color: #858584;
+    color: $text;
   }
 }

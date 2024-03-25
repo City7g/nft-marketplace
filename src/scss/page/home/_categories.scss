@@ -42,9 +42,8 @@
 }
 
 .category {
-
-  border-radius: 20px;
-  background-color: #3b3b3b;
+  border-radius: $radius;
+  background-color: $bg;
   overflow: hidden;
 }
 
@@ -52,7 +51,6 @@
   position: relative;
 
   &::before {
-
     content: '';
     position: absolute;
     inset: 0;
