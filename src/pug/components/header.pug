@@ -1,15 +1,19 @@
+
 header.header
+  include ../components/logo
   .header__wrap
-    a.header-logo.header__logo(href='/')
-      i.icon-TrendUp.header-logo__icon(aria-label='Logo')
-      p.text-p1s.header-logo__text NFT Marketplace
-    .header__mobile
-      nav.header-nav
-        a.header-nav__link(href='/marketplace.html') Marketplace
-        a.header-nav__link(href='/ranking.html') Rankings
-        a.header-nav__link(href='/form.html') Connect a wallet
+    +logo()
+    nav.header__menu
+      ul.header__menu-list
+        li.header__menu-item
+          a.header__menu-link(href='/marketplace.html') Marketplace
+        li.header__menu-item
+          a.header__menu-link(href='/ranking.html') Rankings
+        li.header__menu-item
+          a.header__menu-link(href='/form.html') Connect a wallet
         if (mode === 'development')
-          a.header-nav__link(href='/ui.html') UI
+          li.header__menu-item
+            a.header__menu-link(href='/ui.html') UI
       button.btn.header-btn.header__btn
         i.icon-User.btn__icon
         | Sign Up

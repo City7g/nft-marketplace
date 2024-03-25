@@ -8,9 +8,9 @@ if (burger) {
 }
 
 const headerBurger = document.querySelector('.header__burger')
-const headerMobile = document.querySelector('.header__mobile')
+const headerMenu = document.querySelector('.header__menu')
 
-if (headerBurger && headerMobile) {
+if (headerBurger && headerMenu) {
   headerBurger.addEventListener('click', e => {
     e.preventDefault()
 
@@ -19,7 +19,7 @@ if (headerBurger && headerMobile) {
       : 'hidden'
 
     headerBurger.classList.toggle('active')
-    headerMobile.classList.toggle('active')
+    headerMenu.classList.toggle('active')
   })
 }
 

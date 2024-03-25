@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:focus-visible {
+    border-radius: 2px;
+    outline: 2px solid white;
+    outline-offset: 3px;
+  }
+}
+
+.logo__icon {
+  color: $primary;
+}
+
+.logo__text {
+  color: $white;
+  font-weight: 700;
+  white-space: nowrap;
+}
