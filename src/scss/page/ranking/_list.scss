@@ -58,6 +58,11 @@
   padding: 12px 10px;
   border-radius: 20px;
   background-color: #3b3b3b;
+  transition: 0.3s all ease;
+
+  &:hover {
+    transform: scale(0.95);
+  }
 
   @media (min-width: 768px) {
     padding: 12px 20px;
