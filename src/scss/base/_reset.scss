@@ -52,10 +52,10 @@ picture {
 }
 
 picture img {
-  border-radius: inherit;
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: inherit;
   object-fit: cover;
 }
 
