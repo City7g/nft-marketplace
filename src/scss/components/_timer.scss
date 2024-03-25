@@ -6,6 +6,11 @@
   background-color: #3b3b3b;
 }
 
+.timer--filter {
+  background: rgb(59 59 59 / 50%);
+  backdrop-filter: blur(5px);
+}
+
 .timer__title {
   margin-bottom: 10px;
 }

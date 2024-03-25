@@ -1,5 +1,5 @@
-mixin timer()
-  .timer&attributes(attributes)
+mixin timer(filter = false, btn = true)
+  .timer(class=`${filter && 'timer--filter'}`)&attributes(attributes)
     p.text-p3.timer__title Auction ends in:
 
     .timer__timer
@@ -19,4 +19,5 @@ mixin timer()
         p.title-h3.timer__second 59
         p.text-p3.timer__key Seconds
 
-    button.btn.timer__btn Place Bid
+    if (btn)
+      button.btn.timer__btn Place Bid
