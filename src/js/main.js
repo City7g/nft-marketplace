@@ -1,5 +1,6 @@
 import form from './form.js'
 import dev from './dev.js'
+import tabs from './tabs.js'
 
 dev()
 
@@ -9,6 +10,9 @@ console.log(process.env.API_SECRET)
 
 window.addEventListener('DOMContentLoaded', () => {
   form()
+  create()
+  subscribe()
+  tabs()
 })
 
 if (burger) {

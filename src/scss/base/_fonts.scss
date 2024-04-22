@@ -22,9 +22,19 @@
 }
 
 .title-h2 {
-  font-size: 51px;
-  line-height: 1.1;
+  font-size: 28px;
   font-weight: 700;
+  line-height: 1.4;
+
+  @media (min-width: 768px) {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 51px;
+    line-height: 1.1;
+  }
 }
 
 .title-h3 {
@@ -39,23 +49,35 @@
 }
 
 .title-h4 {
-  font-size: 28px;
-  line-height: 1.4;
+  font-family: "SpaceMono";
+  font-size: 22px;
   font-weight: 700;
+  line-height: 1.6;
+
+  @media (min-width: 1200px) {
+    font-size: 28px;
+    line-height: 1.4;
+  }
 }
 
 .title-h5 {
-  font-size: 22px;
-  line-height: 1.6;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 1.4;
+
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 1.6;
+  }
 }
 
 .text-p1 {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.4;
 
   @media (min-width: 1200px) {
     font-size: 22px;
+    line-height: 1.6;
   }
 }
 
@@ -67,4 +89,9 @@
 .text-p3 {
   font-size: 12px;
   line-height: 1.1;
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }

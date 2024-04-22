@@ -1,0 +1,79 @@
+.artist-info {
+    padding: 40px 0;
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-column {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__list {
+        width: 510px;
+        display: flex;
+        gap: 20px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - (20px * 2)) / 3);
+    }
+
+    &__item-value,
+    &__item-label {
+        display: block;
+    }
+
+    &__label {
+        font-family: 'SpaceMono';
+        color: #858585;
+        margin-bottom: 10px;
+    }
+
+    &__socials-list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__right-column {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__copy-button {
+        width: 186px;
+        height: 60px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.4;
+        background-color: #a259ff;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    &__copy-image {
+        margin-right: 12px;
+        vertical-align: -4px;
+    }
+
+    &__follow-button {
+        width: 145px;
+        height: 60px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.4;
+        border: 2px solid #a259ff;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    &__follow-image {
+        margin-right: 12px;
+        vertical-align: -4px;
+    }
+}

@@ -2,16 +2,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'WorkSans';
+  // padding-top: 54px;
+
+  color: $white;
   background-color: $black;
   color: $white;
   font-size: 16px;
   line-height: 1.6;
   padding-top: 54px;
 
-  @media (min-width: 1200px) {
-    padding-top: 100px;
-  }
+  // @media (min-width: 1200px) {
+  //   padding-top: 100px;
+  // }
 }
 
 main {

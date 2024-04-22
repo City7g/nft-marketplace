@@ -19,8 +19,9 @@ section.index-first
             h4.title-h4.list__title 240k+
             p.text-p1.list__text Artists
       .index-first__card
-        .index-first__image
-          +img('/img/first-image', 'eager')(class="index-first__img")
-        .index-first__info
-          h3.title-h5.index-first__name Space Walking
-          h4.text-p1.index-first__author Animakid
+        a.index-first__link(href='/artist.html')
+          .index-first__image
+            +img('/img/first-image', 'eager')(class="index-first__img")
+          .index-first__info
+            h3.title-h5.index-first__name Space Walking
+            h4.text-p1.index-first__author Animakid

@@ -1,0 +1,67 @@
+.artist-collection {
+    background-color: #3b3b3b;
+    padding: 80px 0;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 60px) / 3);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__card-image {
+        display: block;
+    }
+
+    &__card-info {
+        background-color: #2b2b2b;
+        padding: 20px 30px;
+    }
+
+    &__card-title {
+        margin-bottom: 5px;
+    }
+
+    &__card-profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__card-avatar {
+        border-radius: 50%;
+    }
+
+    &__card-name {
+        font-family: 'SpaceMono';
+    }
+
+    &__card-data {
+        font-family: 'SpaceMono';
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card-price {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-bid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__card-price-title,
+    &__card-bid-title {
+        color: #858585;
+        font-size: 14px;
+    }
+}
